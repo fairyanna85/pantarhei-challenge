@@ -1,0 +1,209 @@
+{
+  "cases": [
+    {
+      "text": "Poke holes in this business plan",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Play devil's advocate on my decision to move abroad",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Is this study credible? It says remote work cuts productivity 20%",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Red team our launch plan",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "What am I missing in this proposal?",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Run a pre-mortem on the reorg",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Steelman the case against what I just argued",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "What's the capital of Australia?",
+      "expect": "none"
+    },
+    {
+      "text": "Fix this bug in my Python function",
+      "expect": "none"
+    },
+    {
+      "text": "Convert this PDF to Word",
+      "expect": "none"
+    },
+    {
+      "text": "Schedule a meeting with Mark on Friday",
+      "expect": "none"
+    },
+    {
+      "text": "Summarize this article",
+      "expect": "none"
+    },
+    {
+      "text": "Write a SQL query that groups sales by region",
+      "expect": "none"
+    },
+    {
+      "text": "Translate this paragraph into French",
+      "expect": "none"
+    },
+    {
+      "text": "Stress test the assumptions in my financial model",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "What are the weakest points in my argument for a four-day week?",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Be a skeptic about this startup pitch before I send it to investors",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Tear apart this migration plan",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Give me the strongest objections to my thesis",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Does this claim hold up? 'Cold showers boost immunity by 30%'",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Red team my hiring process",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Find the blind spots in this strategy memo",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Do a premortem on our product launch: imagine it failed, why?",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "I'm about to present this to the board. Where will they attack?",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Steelman the opposing view on remote work before I write my op-ed",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Is this statistic believable? I read that 90% of startups fail in the first year",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Critique my plan to bike across Europe, be harsh",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Argue against my idea of buying a franchise",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "What could go wrong with my plan to launch on Black Friday?",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Check my reasoning: I think we lost the deal because of price",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Stress-test my negotiation strategy for the contract renewal",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "Challenge the assumptions behind our five-year plan",
+      "expect": "pantarhei-challenge"
+    },
+    {
+      "text": "What's 17% of 2,340?",
+      "expect": "none"
+    },
+    {
+      "text": "Write a Python script that renames files by date",
+      "expect": "none"
+    },
+    {
+      "text": "What time is it in Tokyo?",
+      "expect": "none"
+    },
+    {
+      "text": "Merge these two PDFs into one",
+      "expect": "none"
+    },
+    {
+      "text": "Draft a Word document with a project status template",
+      "expect": "none"
+    },
+    {
+      "text": "What does the word 'ephemeral' mean?",
+      "expect": "none"
+    },
+    {
+      "text": "Move my 3pm meeting to Thursday",
+      "expect": "none"
+    },
+    {
+      "text": "Review this pull request for security issues",
+      "expect": "none"
+    },
+    {
+      "text": "Who won the World Cup in 2014?",
+      "expect": "none"
+    },
+    {
+      "text": "Explain what a mutex is",
+      "expect": "none"
+    },
+    {
+      "text": "Rewrite this email to sound more polite",
+      "expect": "none"
+    },
+    {
+      "text": "Give me a recipe for banana bread",
+      "expect": "none"
+    },
+    {
+      "text": "Convert 5 miles to kilometres",
+      "expect": "none"
+    },
+    {
+      "text": "Why is my React component re-rendering twice?",
+      "expect": "none"
+    },
+    {
+      "text": "Proofread this paragraph for typos",
+      "expect": "none"
+    },
+    {
+      "text": "Create a spreadsheet of my monthly expenses",
+      "expect": "none"
+    },
+    {
+      "text": "Find free time on my calendar next week",
+      "expect": "none"
+    },
+    {
+      "text": "Summarize the plot of Hamlet",
+      "expect": "none"
+    },
+    {
+      "text": "Is this a good name for my bakery?",
+      "expect": "pantarhei-challenge",
+      "contested": true
+    }
+  ]
+}

@@ -1,0 +1,724 @@
+{
+ "skill": "pantarhei-challenge",
+ "schema": "core/schema/method.schema.json",
+ "count": 18,
+ "records": [
+  {
+   "slug": "challenge.steelman",
+   "name": "Steelman first",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Daniel Dennett (Rapoport's rules)",
+    "work": "Intuition Pumps and Other Tools for Thinking",
+    "type": "practitioner",
+    "year": 2013
+   },
+   "source_verified": false,
+   "summary": "Before criticising, restate the position so well its holder would wish they had said it that way, note points of agreement and what you learned. Only then attack.",
+   "key_question": "Could the author of this idea have stated it better than I just did?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "I think their argument is wrong",
+    "before I criticise this",
+    "make the strongest case for it",
+    "am I being fair to this idea"
+   ],
+   "produces": "the strongest version of the position, points of agreement and what you learned, written before any critique",
+   "failure_mode": "Restating a weaker version and attacking that.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.red-team",
+    "challenge.crux"
+   ]
+  },
+  {
+   "slug": "challenge.red-team",
+   "name": "Red team",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Military and intelligence practice; Micah Zenko",
+    "work": "Red Team",
+    "type": "industry",
+    "year": 2015
+   },
+   "source_verified": false,
+   "summary": "An independent group adopts the adversary's goals and tries to make the plan fail. Independence and licence to win are what make it work.",
+   "key_question": "If I wanted this to fail, where would I attack?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "red-team my plan",
+    "attack this proposal",
+    "how would a competitor beat this",
+    "find the holes in this"
+   ],
+   "produces": "a list of attacks from the adversary's point of view, ranked by damage and likelihood",
+   "failure_mode": "A red team without independence or permission to win, which produces polite feedback.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write the plan and its goal in a few sentences.",
+    "Define the adversary: who wants this to fail, and what they can do.",
+    "Adopt the adversary's goals fully; do not defend the plan.",
+    "List every way to make the plan fail.",
+    "Rank attacks by damage and likelihood.",
+    "Hand the top attacks back to the plan's owner for answers."
+   ],
+   "pairs_with": [
+    "challenge.survival-score",
+    "challenge.key-assumptions"
+   ]
+  },
+  {
+   "slug": "challenge.dialectical-inquiry",
+   "name": "Dialectical inquiry",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Richard Mason; David Schweiger et al.",
+    "work": "A Dialectical Approach to Strategic Planning; Group approaches for improving strategic decision making",
+    "type": "academic",
+    "year": "1969; 1986"
+   },
+   "source_verified": false,
+   "summary": "Build a full counter-plan resting on opposite assumptions and debate the two. Stronger than lone devil's advocacy because it forces a whole alternative to exist.",
+   "key_question": "What plan rests on the opposite assumptions, and how well does it hold up?",
+   "status": "complete",
+   "evidence_note": "Dialectical inquiry and devil's advocacy both beat consensus approaches on decision quality (Schweiger, Sandberg & Ragan 1986).",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "what if we're completely wrong",
+    "build the opposite case",
+    "debate this strategy properly",
+    "test our core assumptions against an alternative"
+   ],
+   "produces": "a full counter-plan built on the opposite assumptions, and the assumptions that survived the debate",
+   "failure_mode": "A counter-plan built as a straw man so the original wins easily.",
+   "time_cost": "deep",
+   "group": "group",
+   "steps": [
+    "List the assumptions the current plan rests on.",
+    "Negate each key assumption.",
+    "Build a complete, plausible counter-plan from the negated assumptions.",
+    "Debate the two plans assumption by assumption.",
+    "Keep the assumptions that survive and rebuild the plan on them."
+   ],
+   "pairs_with": [
+    "challenge.key-assumptions",
+    "challenge.crux"
+   ]
+  },
+  {
+   "slug": "challenge.devils-advocate",
+   "name": "Devil's advocate",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Catholic Church (advocatus diaboli)",
+    "work": "Canonisation procedure",
+    "type": "tradition",
+    "year": 1587
+   },
+   "source_verified": false,
+   "summary": "One role argues against the proposal. Effective only if the role is genuine and protected; a token advocate makes the group more confident, not less.",
+   "key_question": "Is anyone actually arguing the other side, with licence to win?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "argue against this",
+    "play devil's advocate",
+    "give me the case against",
+    "push back on my idea"
+   ],
+   "produces": "the strongest arguments against the proposal, each with what it would take to answer it",
+   "failure_mode": "A token advocate whose objections are dismissed, which raises the group's confidence.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Assign the role openly and protect it from social cost.",
+    "State the proposal as it stands.",
+    "Argue against it as strongly as possible, without hedging.",
+    "List each objection with the evidence that would answer it.",
+    "Have the group answer each objection before deciding."
+   ],
+   "pairs_with": [
+    "challenge.steelman",
+    "challenge.survival-score"
+   ]
+  },
+  {
+   "slug": "challenge.consider-opposite",
+   "name": "Consider the opposite",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Charles Lord, Mark Lepper, Elizabeth Preston",
+    "work": "Considering the opposite (JPSP)",
+    "type": "academic",
+    "year": 1984
+   },
+   "source_verified": false,
+   "summary": "Ask how you would evaluate the evidence if it had pointed the other way. More effective than simply being told to be unbiased.",
+   "key_question": "Would I accept this evidence if it supported the opposite conclusion?",
+   "status": "complete",
+   "evidence_note": "Consider-the-opposite reduced biased assimilation where instructions to be fair did not (Lord, Lepper & Preston 1984). Replicated in debiasing literature.",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "am I biased about this",
+    "the evidence supports what I already think",
+    "check my interpretation",
+    "what if the data pointed the other way"
+   ],
+   "produces": "the evidence re-read as if it had come out the other way, with the interpretation that changed",
+   "failure_mode": "Imagining the opposite result only briefly and returning to the same reading.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.ach",
+    "challenge.update-triggers"
+   ]
+  },
+  {
+   "slug": "challenge.ach",
+   "name": "Analysis of competing hypotheses",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards Heuer",
+    "work": "Psychology of Intelligence Analysis",
+    "type": "industry",
+    "year": 1999
+   },
+   "source_verified": false,
+   "summary": "List every hypothesis, list the evidence, mark each piece as consistent or inconsistent with each hypothesis. Keep the hypothesis with the least evidence against it, not the most for it.",
+   "key_question": "Which hypothesis has the least evidence against it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "which explanation fits the evidence best",
+    "several hypotheses could explain this",
+    "weigh the evidence",
+    "what's really going on"
+   ],
+   "produces": "a matrix of hypotheses against evidence with the least-contradicted hypothesis identified",
+   "failure_mode": "Counting supporting evidence instead of looking for inconsistencies.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "List every plausible hypothesis, including ones you dislike.",
+    "List the significant evidence and arguments.",
+    "Mark each item as consistent, inconsistent or neutral with each hypothesis.",
+    "Drop evidence that fits all hypotheses equally; it does not discriminate.",
+    "Rank hypotheses by how much evidence is inconsistent with each.",
+    "Name what new evidence would most change the ranking."
+   ],
+   "pairs_with": [
+    "challenge.update-triggers",
+    "solve.differential-diagnosis"
+   ]
+  },
+  {
+   "slug": "challenge.key-assumptions",
+   "name": "Key assumptions check",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "US intelligence community",
+    "work": "A Tradecraft Primer",
+    "type": "industry",
+    "year": 2009
+   },
+   "source_verified": false,
+   "summary": "List every assumption the conclusion rests on, rate how well supported each is, and name what would make it false. Shows which unexamined assumption carries the most weight.",
+   "key_question": "Which assumption, if false, brings the whole conclusion down?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "what am I assuming here",
+    "check the assumptions in this plan",
+    "what has to be true for this to work",
+    "this all rests on something"
+   ],
+   "produces": "a list of assumptions rated by support, with what would make each false and the weakest load-bearing one marked",
+   "failure_mode": "Listing only assumptions that are easy to defend.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write the conclusion or plan.",
+    "List every assumption it depends on, stated and unstated.",
+    "Rate each: well supported, partly supported, unsupported.",
+    "For each, write what would make it false.",
+    "Mark the assumptions that carry the most weight and are least supported."
+   ],
+   "pairs_with": [
+    "challenge.crux",
+    "challenge.red-team"
+   ]
+  },
+  {
+   "slug": "challenge.crux",
+   "name": "Find the crux",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Center for Applied Rationality",
+    "work": "Double crux technique",
+    "type": "practitioner",
+    "year": 2016
+   },
+   "source_verified": false,
+   "summary": "Find the single belief which, if it changed, would change your conclusion. Disagreement worth having is about that belief.",
+   "key_question": "What single belief, if I changed it, would change my conclusion?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "we keep arguing about this",
+    "what would change my mind",
+    "why do we disagree",
+    "find the real disagreement"
+   ],
+   "produces": "the single belief that would flip the conclusion, and what evidence would settle it",
+   "failure_mode": "Naming a belief that would not actually change the conclusion if it flipped.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "State your conclusion and the other side's.",
+    "List the beliefs each conclusion depends on.",
+    "For each belief, ask: if this changed, would my conclusion change?",
+    "Keep the one belief that would flip it.",
+    "Name the evidence or test that would settle that belief."
+   ],
+   "pairs_with": [
+    "challenge.update-triggers",
+    "challenge.key-assumptions"
+   ]
+  },
+  {
+   "slug": "challenge.chestertons-fence",
+   "name": "Chesterton's fence",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "G. K. Chesterton",
+    "work": "The Thing",
+    "type": "tradition",
+    "year": 1929
+   },
+   "source_verified": false,
+   "summary": "Do not remove a rule or structure until you know why it was put there. The reason may still apply.",
+   "key_question": "Do I know why this was built before I propose removing it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "let's just get rid of this rule",
+    "this process seems pointless",
+    "why do we do it this way",
+    "remove this step"
+   ],
+   "produces": "the original reason for the rule or structure, and whether it still applies",
+   "failure_mode": "Assuming no reason exists because none is written down.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "create.subtraction",
+    "challenge.key-assumptions"
+   ]
+  },
+  {
+   "slug": "challenge.extraordinary-claims",
+   "name": "Extraordinary claims",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Carl Sagan (after Laplace)",
+    "work": "Cosmos; Broca's Brain",
+    "type": "practitioner",
+    "year": 1980
+   },
+   "source_verified": false,
+   "summary": "The evidence required scales with how much the claim contradicts what is already well established.",
+   "key_question": "How surprising is this claim, and is the evidence proportionate?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "this sounds too good to be true",
+    "is this claim credible",
+    "a surprising study says",
+    "this contradicts what we know"
+   ],
+   "produces": "the claim rated against established knowledge, with the strength of evidence it would need",
+   "failure_mode": "Demanding extraordinary evidence for claims that are merely unfamiliar to you.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.lateral-reading",
+    "challenge.consider-opposite"
+   ]
+  },
+  {
+   "slug": "challenge.lateral-reading",
+   "name": "Lateral reading",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Sam Wineburg & Sarah McGrew",
+    "work": "Lateral Reading (Stanford History Education Group working paper)",
+    "type": "academic",
+    "year": 2017
+   },
+   "source_verified": false,
+   "summary": "Judge a source by leaving it: check what other independent sources say about who is behind it, before reading it closely.",
+   "key_question": "What do independent sources say about who produced this?",
+   "status": "complete",
+   "evidence_note": "Professional fact-checkers outperformed historians and students by reading laterally (Wineburg & McGrew 2017). Training studies show gains.",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this source trustworthy",
+    "who is behind this website",
+    "can I trust this article",
+    "check this source"
+   ],
+   "produces": "a note on who is behind the source and what independent sources say about it",
+   "failure_mode": "Reading the source closely before checking who it is, which lets its presentation persuade you.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Before reading closely, leave the page.",
+    "Search for the organisation or author behind it.",
+    "Read what independent, reputable sources say about them.",
+    "Check funding, affiliations and track record.",
+    "Return to the source only if it passes."
+   ],
+   "pairs_with": [
+    "challenge.extraordinary-claims",
+    "challenge.ach"
+   ]
+  },
+  {
+   "slug": "challenge.update-triggers",
+   "name": "Pre-commit update triggers",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Philip Tetlock & Dan Gardner",
+    "work": "Superforecasting",
+    "type": "academic",
+    "year": 2015
+   },
+   "source_verified": false,
+   "summary": "Before seeing new evidence, state what result would move your estimate and by how much. Prevents re-reading any evidence as confirmation.",
+   "key_question": "What result would make me change my mind, decided before I see it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "what would change my mind",
+    "set criteria before seeing the results",
+    "I keep reading everything as confirmation",
+    "how should this new data change my view"
+   ],
+   "produces": "a pre-registered list of results and the size of the update each would cause",
+   "failure_mode": "Writing triggers so vague that any result can be read as meeting or missing them.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.crux",
+    "decide.kill-criteria"
+   ]
+  },
+  {
+   "slug": "challenge.survival-score",
+   "name": "Survival score",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Panta Rhei (original)",
+    "work": "Panta Rhei design",
+    "type": "practitioner",
+    "year": 2026,
+    "note": "Original to Panta Rhei; describe as such."
+   },
+   "source_verified": false,
+   "summary": "After the attacks, rate how much of the idea survives on a 0–10 scale, with the rule: one fatal flaw caps the score at 3, regardless of how many strengths there are.",
+   "key_question": "After the strongest attack, how much of this is still standing?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "how much of this idea survives",
+    "score this plan after the critique",
+    "is this idea still worth pursuing",
+    "how bad are these flaws"
+   ],
+   "produces": "a 0 to 10 survival score with the fatal flaw, if any, and the strongest surviving element",
+   "failure_mode": "Averaging strengths and weaknesses so a fatal flaw is diluted.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "List the attacks that landed and those that did not.",
+    "Check whether any attack is fatal on its own.",
+    "If one is, cap the score at 3.",
+    "Otherwise rate from 0 to 10 how much of the idea survives.",
+    "Write the strongest surviving element and the weakest link."
+   ],
+   "pairs_with": [
+    "decide.weighted-criteria",
+    "decide.premortem"
+   ]
+  },
+  {
+   "slug": "create.subtraction",
+   "name": "Subtraction",
+   "kind": "principle",
+   "mode": "lens",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Gabrielle Adams, Benjamin Converse, Andrew Hales, Leidy Klotz",
+    "work": "People systematically overlook subtractive changes (Nature)",
+    "type": "academic",
+    "year": 2021,
+    "url": "https://doi.org/10.1038/s41586-021-03380-y"
+   },
+   "source_verified": true,
+   "summary": "People default to adding when they improve something. Explicitly ask what to remove. The subtractive option is often cheaper and better, and is missed unless prompted.",
+   "key_question": "What could I take away instead of adding?",
+   "status": "complete",
+   "evidence_note": "Eight experiments, Nature 2021: participants overlooked subtractive solutions unless cued. Robust within the paradigm; applied effect sizes unknown.",
+   "card": "Solve it only by removing things.",
+   "stages": [
+    "generate"
+   ],
+   "use_when": [
+    "this process has too many steps",
+    "we keep adding features",
+    "simplify this",
+    "what can we remove"
+   ],
+   "produces": "a list of removable parts with the effect of removing each",
+   "failure_mode": "Removing something that carried a real function that nobody wrote down.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "create.sit-templates",
+    "create.ten-x"
+   ],
+   "borrowed_from": "pantarhei-brainstorm"
+  },
+  {
+   "slug": "decide.kill-criteria",
+   "name": "Kill criteria",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Annie Duke",
+    "work": "Quit",
+    "type": "practitioner",
+    "year": 2022
+   },
+   "source_verified": false,
+   "summary": "Before committing, write the conditions and the date at which you will stop. Decided in advance, quitting does not depend on willpower in the moment.",
+   "key_question": "What would have to happen, by when, for me to stop?",
+   "status": "complete",
+   "stages": [
+    "decide",
+    "execute"
+   ],
+   "use_when": [
+    "when should I quit",
+    "how will I know to stop",
+    "set limits on this project",
+    "I keep throwing good money after bad"
+   ],
+   "produces": "written conditions and a date at which the commitment will be stopped",
+   "failure_mode": "Kill criteria so loose they will never trigger.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Write what you are committing to.",
+    "Write the signals that would show it is not working.",
+    "Turn each signal into a measurable condition.",
+    "Set a date to check.",
+    "Tell someone who will hold you to it."
+   ],
+   "pairs_with": [
+    "decide.decision-journal",
+    "challenge.update-triggers"
+   ],
+   "borrowed_from": "pantarhei-decide"
+  },
+  {
+   "slug": "decide.premortem",
+   "name": "Pre-mortem",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Gary Klein",
+    "work": "Performing a Project Premortem (HBR)",
+    "type": "academic",
+    "year": 2007
+   },
+   "source_verified": false,
+   "summary": "Imagine it is a year later and the decision failed. Write why. Imagined certainty of failure frees people to name risks they would otherwise keep quiet.",
+   "key_question": "If this has failed a year from now, what is the most likely reason?",
+   "status": "complete",
+   "evidence_note": "Prospective hindsight increased the number of reasons generated by about 30% (Mitchell, Russo & Pennington 1989). Effect on decision outcomes less studied.",
+   "stages": [
+    "decide",
+    "stress_test"
+   ],
+   "use_when": [
+    "what could go wrong with this",
+    "before we commit",
+    "imagine this fails",
+    "find the risks"
+   ],
+   "produces": "a list of reasons the decision failed, ranked, with a mitigation for the top ones",
+   "failure_mode": "Writing generic risks instead of specific stories of failure.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Assume it is a year later and the decision has failed badly.",
+    "Everyone writes the reasons it failed, independently.",
+    "Pool the reasons and remove duplicates.",
+    "Rank by likelihood and impact.",
+    "Add mitigations or kill criteria for the top reasons."
+   ],
+   "pairs_with": [
+    "decide.kill-criteria",
+    "challenge.survival-score"
+   ],
+   "borrowed_from": "pantarhei-decide"
+  },
+  {
+   "slug": "decide.weighted-criteria",
+   "name": "Weighted criteria",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Ralph Keeney & Howard Raiffa",
+    "work": "Decisions with Multiple Objectives",
+    "type": "academic",
+    "year": 1976
+   },
+   "source_verified": false,
+   "summary": "Name the criteria, weight them before scoring, score each option, sum. The value is in the weighting conversation; the total is only as good as the weights.",
+   "key_question": "Did I set the weights before I saw the scores?",
+   "status": "complete",
+   "tension_with": [
+    "decide.gut-check",
+    "decide.fast-frugal"
+   ],
+   "stages": [
+    "decide"
+   ],
+   "use_when": [
+    "compare these options",
+    "score these choices",
+    "which option is best overall",
+    "decision matrix"
+   ],
+   "produces": "a scoring table with weights set before scoring, totals, and a sensitivity check on the weights",
+   "failure_mode": "Adjusting weights after scoring until the preferred option wins.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List the options.",
+    "Name the criteria that matter.",
+    "Assign weights before looking at scores.",
+    "Score each option on each criterion.",
+    "Multiply and sum.",
+    "Check whether a reasonable change in weights changes the winner."
+   ],
+   "pairs_with": [
+    "decide.even-swaps",
+    "decide.gut-check"
+   ],
+   "borrowed_from": "pantarhei-decide"
+  },
+  {
+   "slug": "solve.differential-diagnosis",
+   "name": "Differential diagnosis",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Clinical medicine",
+    "work": "Medical diagnostic practice",
+    "type": "tradition"
+   },
+   "source_verified": false,
+   "summary": "List every condition that could produce the symptoms, then order tests that discriminate between them, starting with the dangerous and the common.",
+   "key_question": "Which test would tell my top two candidates apart?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "what could be causing these symptoms",
+    "rule out possible causes",
+    "several explanations fit",
+    "which test would tell them apart"
+   ],
+   "produces": "a ranked list of candidate causes with the test that discriminates between the top ones",
+   "failure_mode": "Ordering tests by convenience and leaving the dangerous candidate untested.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List every cause that could produce the observed symptoms.",
+    "Rank by likelihood and by danger if missed.",
+    "For the top candidates, find tests that would come out differently for each.",
+    "Run the most discriminating test first, starting with dangerous and common causes.",
+    "Update the list after each result."
+   ],
+   "pairs_with": [
+    "solve.is-is-not",
+    "solve.smallest-test"
+   ],
+   "borrowed_from": "pantarhei-solve"
+  }
+ ]
+}

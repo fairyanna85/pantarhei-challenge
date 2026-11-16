@@ -1,0 +1,17 @@
+{
+  "name": "pantarhei-challenge",
+  "owner": {
+    "name": "fairyanna85"
+  },
+  "metadata": {
+    "description": "Critical-thinking skill: red-team an idea, plan or claim before it costs you."
+  },
+  "plugins": [
+    {
+      "name": "pantarhei-challenge",
+      "source": "./",
+      "description": "Critical-thinking skill: red-team an idea, plan or claim before it costs you.",
+      "version": "0.1.0"
+    }
+  ]
+}

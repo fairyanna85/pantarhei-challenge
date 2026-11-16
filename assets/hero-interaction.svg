@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="406" viewBox="0 0 1200 406" role="img" aria-label="The Red Team: a sample output of Panta Rhei challenge">
+<rect width="1200" height="406" rx="14" fill="#14161A"/>
+<circle cx="34" cy="34" r="6" fill="#F28466"/><text x="52" y="39" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#A9B0BC" letter-spacing="1">THE RED TEAM</text>
+<text x="40" y="82" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">RED TEAM · &quot;Move the team to a four-day week to fix burnout&quot;</text>
+<text x="40" y="104" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F28466" xml:space="preserve">──────────────────────────────────────────────────────────────</text>
+<text x="40" y="126" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">STEELMAN  Burnout is driven by sustained load without recovery; a structural day off…</text>
+<text x="40" y="148" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F28466" xml:space="preserve"></text>
+<text x="40" y="170" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">#  ATTACK                                        AUDIT                    SEVERITY</text>
+<text x="40" y="192" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">1  Pilots that report success self-select keen teams   Survivorship bias   serious</text>
+<text x="40" y="214" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">2  Same deadlines in 4 days raises daily load         Second-order         FATAL unless scope drops</text>
+<text x="40" y="236" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">3  Partner SLAs assume 5-day coverage                  Key assumptions      serious</text>
+<text x="40" y="258" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">4  &quot;Everyone loves it&quot; is the first-month effect       Regression to mean   cosmetic</text>
+<text x="40" y="280" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F28466" xml:space="preserve"></text>
+<text x="40" y="302" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">SURVIVAL   3/10  (one fatal flaw caps at 3)</text>
+<text x="40" y="324" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">WEAKEST LINK  #2: the plan holds only if scope falls with the hours.</text>
+<text x="40" y="346" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">STRONGER VERSION  Four-day week paired with a 20% scope cut and a rotating Friday on-call.</text>
+</svg>

@@ -1,0 +1,1292 @@
+{
+ "schema": "pantarhei-core/schema/method.schema.json",
+ "count": 35,
+ "records": [
+  {
+   "slug": "mm.circle-of-competence",
+   "legacy_id": 2,
+   "name": "Circle of Competence",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Warren Buffett",
+    "work": "Berkshire Hathaway shareholder letters",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1996
+   },
+   "source_verified": false,
+   "summary": "Know the areas where your judgment has a track record and where it does not. Inside them, act; outside them, slow down, borrow expertise or stay out.",
+   "key_question": "Is this inside my circle, and what is the evidence that it is?",
+   "stages": [
+    "frame",
+    "decide"
+   ],
+   "use_when": [
+    "unfamiliar domain",
+    "high confidence with thin track record",
+    "evaluating advice from outside the speaker's field"
+   ],
+   "produces": "explicit in/out boundary plus who to consult outside it",
+   "failure_mode": "Used as permanent justification for never entering a new domain.",
+   "pairs_with": [
+    "mm.niches",
+    "mm.specialization",
+    "mm.survivorship-bias"
+   ],
+   "tension_with": [
+    "mm.first-principles-thinking",
+    "mm.curiosity-instinct"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.second-order-thinking",
+   "legacy_id": 5,
+   "name": "Second-Order Thinking",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Howard Marks",
+    "work": "The Most Important Thing",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 2011
+   },
+   "source_verified": false,
+   "summary": "Look past the immediate result to the reactions it triggers: who responds, how, and what follows from their response. First effects are often the opposite of later ones.",
+   "key_question": "Who reacts to this, and what happens after their reaction?",
+   "stages": [
+    "stress_test",
+    "decide"
+   ],
+   "use_when": [
+    "policy, pricing or incentive change",
+    "an obvious fix",
+    "any decision with second parties"
+   ],
+   "produces": "consequence chain with named reacting actors",
+   "failure_mode": "Speculative chains presented as forecast; infinite regress used to avoid deciding.",
+   "pairs_with": [
+    "mm.incentives",
+    "mm.feedback-loops",
+    "mm.ecosystems",
+    "mm.counterinsurgency"
+   ],
+   "tension_with": [
+    "mm.efficiency"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.inversion",
+   "legacy_id": 7,
+   "name": "Inversion",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Carl Jacobi",
+    "work": "Jacobi's maxim, popularised by Charlie Munger",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models"
+   },
+   "source_verified": false,
+   "summary": "Approach the problem backwards: ask what would make it fail, or what you want to avoid, then steer away from that. Often clearer than asking directly how to succeed.",
+   "key_question": "What would guarantee failure here, and am I doing any of it?",
+   "stages": [
+    "generate",
+    "stress_test"
+   ],
+   "use_when": [
+    "stuck on how-to",
+    "ambitious goal",
+    "crowded or exhausted solution space"
+   ],
+   "produces": "ranked avoid-list of failure paths",
+   "failure_mode": "Avoidance-only strategy that eliminates downside without ever building upside.",
+   "pairs_with": [
+    "mm.margin-of-safety",
+    "mm.multiply-by-zero",
+    "mm.confirmation-bias-and-falsification",
+    "mm.thought-experiment"
+   ],
+   "tension_with": [
+    "mm.curiosity-instinct"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.occams-razor",
+   "legacy_id": 8,
+   "name": "Occam's Razor",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "William of Ockham",
+    "work": "Principle of parsimony",
+    "type": "tradition",
+    "note": "Selection follows Farnam Street's Great Mental Models"
+   },
+   "source_verified": false,
+   "summary": "Between explanations that fit the facts equally well, start with the one that needs the fewest extra assumptions. A default for ordering hypotheses, not proof that the simple one is right.",
+   "key_question": "Which explanation requires the fewest unsupported assumptions?",
+   "stages": [
+    "decide"
+   ],
+   "use_when": [
+    "competing causal accounts",
+    "elaborate coordination implied",
+    "conspiracy-shaped explanation"
+   ],
+   "produces": "explanations ranked by assumption load",
+   "failure_mode": "Amputating real complexity. Simplicity is a tiebreaker, not evidence of truth.",
+   "pairs_with": [
+    "mm.hanlons-razor",
+    "mm.failure-to-account-for-base-rates",
+    "mm.first-conclusion-bias"
+   ],
+   "tension_with": [
+    "mm.irreducibility",
+    "mm.ecosystems"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.hanlons-razor",
+   "legacy_id": 9,
+   "name": "Hanlon's Razor",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Robert J. Hanlon",
+    "work": "Murphy's Law Book Two (Arthur Bloch)",
+    "type": "tradition",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1980
+   },
+   "source_verified": false,
+   "summary": "Before concluding someone acted out of malice, check whether carelessness, ignorance or confusion would explain it. Those are far more common causes of harm.",
+   "key_question": "Do incompetence, constraint or incentive explain this before malice does?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "perceived slight or sabotage",
+    "blame attribution",
+    "escalating conflict"
+   ],
+   "produces": "alternative causal candidates ranked by prior likelihood",
+   "failure_mode": "Excusing repeated, patterned harm that has already outrun the incompetence explanation.",
+   "pairs_with": [
+    "mm.bias-from-incentives",
+    "mm.overestimate-consistency-of-behavior",
+    "mm.occams-razor"
+   ],
+   "tension_with": [
+    "mm.incentives"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.relativity",
+   "legacy_id": 10,
+   "name": "Relativity",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Albert Einstein",
+    "work": "On the Electrodynamics of Moving Bodies",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1905
+   },
+   "source_verified": false,
+   "summary": "What you see depends on where you stand. Your position, history and interests shape what looks obvious, so ask how the situation appears from other positions before judging it.",
+   "key_question": "From whose vantage point is this behaviour rational?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "'they're being irrational'",
+    "stakeholder conflict",
+    "cross-cultural or cross-functional disagreement"
+   ],
+   "produces": "frame inventory: what each actor sees, values and cannot see",
+   "failure_mode": "Sliding from relativity of perception into relativism about validity.",
+   "pairs_with": [
+    "mm.framing",
+    "mm.overestimate-consistency-of-behavior",
+    "mm.incentives",
+    "mm.setting"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.self-preservation",
+   "legacy_id": 24,
+   "name": "Self-Preservation",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Self-protective motives are well supported across species; terror-management studies on the human side have mixed replication. Treat as a motive to expect, not a predictor of any act.",
+   "origin": {
+    "author": "Richard Dawkins",
+    "work": "The Selfish Gene",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1976
+   },
+   "source_verified": false,
+   "summary": "People and organisations act to protect their own survival, status and position. Expect this drive to shape behaviour, especially when change threatens someone.",
+   "key_question": "Whose identity, status or security is threatened by this?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "resistance that looks irrational",
+    "reorganisation",
+    "defensive or territorial behaviour"
+   ],
+   "produces": "threat map by actor",
+   "failure_mode": "Psychologising a substantive disagreement into a threat response.",
+   "pairs_with": [
+    "mm.incentives",
+    "mm.envy-and-jealousy",
+    "mm.hierarchical-organization"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.sampling",
+   "legacy_id": 41,
+   "name": "Sampling",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Jacob Bernoulli",
+    "work": "Ars Conjectandi (law of large numbers)",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1713
+   },
+   "source_verified": false,
+   "summary": "Conclusions are only as good as the sample behind them. Small or unrepresentative samples mislead, so ask how the data was gathered and how much of it there is.",
+   "key_question": "How many observations is this built on, and how were they selected?",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "any cited statistic",
+    "anecdote-driven conclusion",
+    "pilot results"
+   ],
+   "produces": "sample adequacy verdict and selection bias check",
+   "failure_mode": "Demanding impossible sample sizes as a device for stalling decisions.",
+   "pairs_with": [
+    "mm.failure-to-account-for-base-rates",
+    "mm.overgeneralization-from-small-samples",
+    "mm.survivorship-bias"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.randomness",
+   "legacy_id": 42,
+   "name": "Randomness",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Nassim Nicholas Taleb",
+    "work": "Fooled by Randomness",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 2001
+   },
+   "source_verified": false,
+   "summary": "Many outcomes contain a large element of chance. Allow for luck when explaining results, and avoid reading patterns into noise.",
+   "key_question": "Could this outcome be noise?",
+   "stages": [
+    "review"
+   ],
+   "use_when": [
+    "streaks and records",
+    "single-period results",
+    "attributing success or failure"
+   ],
+   "produces": "noise-versus-signal verdict",
+   "failure_mode": "Attributing everything to luck, which dissolves accountability entirely.",
+   "pairs_with": [
+    "mm.regression-to-the-mean",
+    "mm.survivorship-bias",
+    "mm.sampling"
+   ],
+   "tension_with": [
+    "mm.plot",
+    "mm.narrative-instinct"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.regression-to-the-mean",
+   "legacy_id": 43,
+   "name": "Regression to the Mean",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Francis Galton",
+    "work": "Regression towards Mediocrity in Hereditary Stature",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1886
+   },
+   "source_verified": false,
+   "summary": "An extreme result is usually followed by one closer to average, because chance contributed to the extreme. Do not credit or blame an intervention for that return.",
+   "key_question": "Was this extreme, and what is the expected next value without any intervention?",
+   "stages": [
+    "review",
+    "decide"
+   ],
+   "use_when": [
+    "after a record quarter or a disaster",
+    "evaluating an intervention's effect",
+    "performance management"
+   ],
+   "produces": "adjusted expectation and counterfactual baseline",
+   "failure_mode": "Calling a genuine trend regression to the mean.",
+   "pairs_with": [
+    "mm.randomness",
+    "mm.probabilistic-thinking",
+    "mm.sampling"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.bubbles",
+   "legacy_id": 59,
+   "name": "Bubbles",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Historical bubbles are well catalogued (Kindleberger); experimental bubbles replicate (Smith, Suchanek and Williams 1988). Spotting a bubble in real time is not reliable.",
+   "origin": {
+    "author": "Charles Kindleberger",
+    "work": "Manias, Panics and Crashes",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1978
+   },
+   "source_verified": false,
+   "summary": "Prices or enthusiasm can rise far beyond underlying value when people buy because others are buying. Bubbles are easy to see in hindsight and hard to time from inside.",
+   "key_question": "Is enthusiasm detached from fundamentals, and what story is sustaining it?",
+   "stages": [
+    "review"
+   ],
+   "use_when": [
+    "hype cycles",
+    "'this time is different'",
+    "fear of missing out on an asset or trend"
+   ],
+   "produces": "gap between fundamentals and narrative",
+   "failure_mode": "Calling every rise a bubble and missing a genuine regime change.",
+   "pairs_with": [
+    "mm.social-proof",
+    "mm.narrative-instinct",
+    "mm.randomness"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.framing",
+   "legacy_id": 63,
+   "name": "Framing",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Framing effects (Tversky and Kahneman 1981) replicate broadly, with size varying by task and population.",
+   "origin": {
+    "author": "Amos Tversky; Daniel Kahneman",
+    "work": "The Framing of Decisions and the Psychology of Choice",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1981
+   },
+   "source_verified": false,
+   "summary": "How a choice is presented changes how people respond to it, even when the facts are the same. Check whether you would decide differently under another framing.",
+   "key_question": "How does the presentation change the response, and who chose that frame?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "negotiation",
+    "survey or poll results",
+    "any claim arriving pre-interpreted"
+   ],
+   "produces": "the operative frame plus two alternative framings",
+   "failure_mode": "Reframing used as a substitute for changing substance, which is manipulation.",
+   "pairs_with": [
+    "mm.relativity",
+    "mm.representation",
+    "mm.audience"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.representation",
+   "legacy_id": 66,
+   "name": "Representation",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Charles Sanders Peirce",
+    "work": "Semiotics (sign, object, interpretant)",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models"
+   },
+   "source_verified": false,
+   "summary": "A representation stands in for something else and always selects and distorts. Ask what a chart, symbol or summary leaves out before trusting it.",
+   "key_question": "What does this metric, word or model hide, and whose interpretation does it encode?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "dashboards and KPIs",
+    "contested terminology",
+    "models standing in for reality"
+   ],
+   "produces": "distortion inventory of the representation",
+   "failure_mode": "Endless critique of representations with no working substitute offered.",
+   "pairs_with": [
+    "mm.map-is-not-the-territory",
+    "mm.framing",
+    "mm.language-instinct"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.bias-from-incentives",
+   "legacy_id": 77,
+   "name": "Bias from Incentives",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Self-serving bias in judgment is replicated (auditor and expert-advice studies, e.g. Moore and Loewenstein). Awareness alone does not remove it.",
+   "origin": {
+    "author": "Charlie Munger",
+    "work": "The Psychology of Human Misjudgment",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1995
+   },
+   "source_verified": false,
+   "summary": "People sincerely come to believe what it pays them to believe. When judging a claim, ask what the source gains if you accept it.",
+   "key_question": "What does the person telling me this get if I believe it?",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "advice from an interested party",
+    "consultant or vendor analysis",
+    "your own self-justification"
+   ],
+   "produces": "claims re-weighted by the incentive behind them",
+   "failure_mode": "Dismissing every interested party, when the most informed people are usually interested.",
+   "pairs_with": [
+    "mm.incentives",
+    "mm.confirmation-bias-and-falsification",
+    "mm.occams-razor"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.pavlovian-association",
+   "legacy_id": 78,
+   "name": "Pavlovian Association",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Classical conditioning is among the most replicated findings in psychology (Pavlov 1927). Human consumer-association effects are smaller and less consistent.",
+   "origin": {
+    "author": "Ivan Pavlov",
+    "work": "Conditioned Reflexes",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1927
+   },
+   "source_verified": false,
+   "summary": "Repeated pairing of a stimulus with an experience makes the stimulus trigger the response on its own. Many reactions are learned associations, not judgments.",
+   "key_question": "What associations attach to this beyond its substance?",
+   "stages": [
+    "execute"
+   ],
+   "use_when": [
+    "branding",
+    "aversion to a task or meeting",
+    "blaming the messenger"
+   ],
+   "produces": "association inventory, positive and negative",
+   "failure_mode": "Engineering associations as a replacement for improving the underlying thing.",
+   "pairs_with": [
+    "mm.framing",
+    "mm.setting"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.envy-and-jealousy",
+   "legacy_id": 79,
+   "name": "Envy and Jealousy",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Social comparison and envy-driven behaviour appear in experiments (costly punishment and spite in economic games). Strength varies by culture and individual.",
+   "origin": {
+    "author": "Charlie Munger",
+    "work": "The Psychology of Human Misjudgment",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1995
+   },
+   "source_verified": false,
+   "summary": "People compare their position with others and resent those who have more. Envy and jealousy drive choices that make no sense on absolute terms.",
+   "key_question": "Who is comparing themselves to whom, and what does that comparison cost?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "compensation and promotion",
+    "resource allocation",
+    "unexplained resentment"
+   ],
+   "produces": "relative-position map",
+   "failure_mode": "Reducing a legitimate fairness claim to envy in order to dismiss it.",
+   "pairs_with": [
+    "mm.relative-satisfaction-misery",
+    "mm.sensitivity-to-fairness",
+    "mm.self-preservation"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.liking-loving-and-disliking-hating",
+   "legacy_id": 80,
+   "name": "Liking/Loving and Disliking/Hating",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Liking colours judgment: halo effect (Thorndike 1920; Nisbett and Wilson 1977) and similarity-liking findings. Effect sizes vary.",
+   "origin": {
+    "author": "Charlie Munger",
+    "work": "The Psychology of Human Misjudgment",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1995
+   },
+   "source_verified": false,
+   "summary": "We overrate people and things we like and underrate those we dislike, including the evidence they bring. Separate the messenger from the message.",
+   "key_question": "Would I reach this judgement if someone I dislike had said it?",
+   "stages": [
+    "decide"
+   ],
+   "use_when": [
+    "evaluating proposals",
+    "performance reviews",
+    "politically coded claims"
+   ],
+   "produces": "source-blind re-evaluation",
+   "failure_mode": "Overcorrecting against people you like, which is the same error signed differently.",
+   "pairs_with": [
+    "mm.confirmation-bias-and-falsification",
+    "mm.tendency-to-stereotype",
+    "mm.bias-from-incentives"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.denial",
+   "legacy_id": 81,
+   "name": "Denial",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Defensive avoidance of threatening information is documented (ostrich effect; motivated reasoning, Kunda 1990). Individual variation is large; denial as a mechanism is hard to test.",
+   "origin": {
+    "author": "Charlie Munger",
+    "work": "The Psychology of Human Misjudgment",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1995
+   },
+   "source_verified": false,
+   "summary": "When a truth is painful, people avoid seeing it. Denial protects comfort in the short term and lets problems grow in the long term.",
+   "key_question": "What evidence am I declining to look at, and why that one?",
+   "stages": [
+    "review"
+   ],
+   "use_when": [
+    "declining metrics not being discussed",
+    "failing project or relationship",
+    "health or finances avoided"
+   ],
+   "produces": "explicit list of evidence being avoided",
+   "failure_mode": "'You're in denial' used as an unfalsifiable debate move against others.",
+   "pairs_with": [
+    "mm.confirmation-bias-and-falsification",
+    "mm.hindsight-bias",
+    "mm.commitment-and-consistency-bias"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.availability-heuristic",
+   "legacy_id": 82,
+   "name": "Availability Heuristic",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Tversky and Kahneman (1973) showed judged frequency tracks ease of recall. Later work refines the mechanism (ease versus content); the core effect replicates.",
+   "origin": {
+    "author": "Amos Tversky; Daniel Kahneman",
+    "work": "Availability: A Heuristic for Judging Frequency and Probability",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1973
+   },
+   "source_verified": false,
+   "summary": "We judge how likely something is by how easily examples come to mind. Recent, vivid or frequent events feel more probable than they are.",
+   "key_question": "Is this vivid because it is frequent, or frequent-seeming because it is vivid?",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "risk estimates after an incident",
+    "news-driven fear",
+    "recency in decision making"
+   ],
+   "produces": "frequency correction against actual data",
+   "failure_mode": "Dismissing recent evidence precisely because it is recent.",
+   "pairs_with": [
+    "mm.failure-to-account-for-base-rates",
+    "mm.sampling",
+    "mm.failure-to-see-false-conjunctions"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.failure-to-account-for-base-rates",
+   "legacy_id": 83,
+   "name": "Failure to Account for Base Rates",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Daniel Kahneman; Amos Tversky",
+    "work": "On the Psychology of Prediction",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1973
+   },
+   "source_verified": false,
+   "summary": "Before judging a specific case, start from how often outcomes like it happen in general. Vivid details tempt us to ignore those background frequencies.",
+   "key_question": "What is the historical frequency for cases like this, before I look at this case's specifics?",
+   "stages": [
+    "decide"
+   ],
+   "use_when": [
+    "project timelines",
+    "startup or venture odds",
+    "diagnosis and forecasting"
+   ],
+   "produces": "reference class and the prior it implies",
+   "failure_mode": "Choosing the reference class that produces the conclusion you wanted.",
+   "pairs_with": [
+    "mm.probabilistic-thinking",
+    "mm.sampling",
+    "mm.availability-heuristic"
+   ],
+   "tension_with": [
+    "mm.failure-to-see-false-conjunctions",
+    "mm.tendency-to-stereotype"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.tendency-to-stereotype",
+   "legacy_id": 84,
+   "name": "Tendency to Stereotype",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Categorical judgment is documented in social cognition. Accuracy of stereotypes is a disputed research area (Jussim); use as a warning about shortcuts, not a verdict on any group.",
+   "origin": {
+    "author": "Walter Lippmann",
+    "work": "Public Opinion",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1922
+   },
+   "source_verified": false,
+   "summary": "Sorting people and things into categories saves effort but erases individual differences. Check whether the category actually predicts anything about this case.",
+   "key_question": "Am I using a category where individuating evidence is actually available?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "hiring and evaluation",
+    "market segments",
+    "generalisations about a group"
+   ],
+   "produces": "specificity check: what individuating data exists",
+   "failure_mode": "Refusing all categorisation, which discards genuine base-rate information.",
+   "pairs_with": [
+    "mm.overgeneralization-from-small-samples",
+    "mm.failure-to-account-for-base-rates"
+   ],
+   "tension_with": [
+    "mm.failure-to-account-for-base-rates"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.failure-to-see-false-conjunctions",
+   "legacy_id": 85,
+   "name": "Failure to See False Conjunctions",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Amos Tversky; Daniel Kahneman",
+    "work": "Extensional versus Intuitive Reasoning",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1983
+   },
+   "source_verified": false,
+   "summary": "A detailed scenario can feel more likely than a broader one that contains it, though it cannot be. Each added detail lowers the probability.",
+   "key_question": "Am I rating a detailed scenario as more likely than the broader case that contains it?",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "scenario planning",
+    "detailed forecasts",
+    "vivid and specific predictions"
+   ],
+   "produces": "probability correction toward the parent category",
+   "failure_mode": "Rejecting useful specificity in planning because it is technically less probable.",
+   "pairs_with": [
+    "mm.probabilistic-thinking",
+    "mm.narrative-instinct",
+    "mm.availability-heuristic"
+   ],
+   "tension_with": [
+    "mm.failure-to-account-for-base-rates"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.social-proof",
+   "legacy_id": 86,
+   "name": "Social Proof",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Conformity (Asch 1951) and informational social influence replicate, with size varying by culture, group size and task.",
+   "origin": {
+    "author": "Robert Cialdini",
+    "work": "Influence",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1984
+   },
+   "source_verified": false,
+   "summary": "We take others' behaviour as evidence of what is right, especially when unsure. Check whether the crowd has independent evidence or is copying itself.",
+   "key_question": "Am I believing this because of evidence, or because of who else believes it?",
+   "stages": [
+    "decide"
+   ],
+   "use_when": [
+    "crowded trades or trends",
+    "strong internal consensus",
+    "industry best practice"
+   ],
+   "produces": "independent evidence check separate from consensus",
+   "failure_mode": "Contrarianism as identity: rejecting consensus because it is consensus.",
+   "pairs_with": [
+    "mm.bubbles",
+    "mm.first-conclusion-bias",
+    "mm.confirmation-bias-and-falsification"
+   ],
+   "tension_with": [
+    "mm.trust"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.narrative-instinct",
+   "legacy_id": 87,
+   "name": "Narrative Instinct",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Narrative fallacy is argued by Taleb from cases; related support exists in explanation-seeking studies. Direct tests of the claimed bias are limited.",
+   "origin": {
+    "author": "Nassim Nicholas Taleb",
+    "work": "The Black Swan",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 2007
+   },
+   "source_verified": false,
+   "summary": "We understand events as stories with causes, characters and meaning. Stories are memorable and persuasive, which makes them easy to accept without checking.",
+   "key_question": "Is this a story fitted to a known outcome, or an explanation that would have predicted it?",
+   "stages": [
+    "review"
+   ],
+   "use_when": [
+    "post-hoc explanations",
+    "case studies and press narratives",
+    "success attributions"
+   ],
+   "produces": "separation of narrative from predictive evidence",
+   "failure_mode": "Rejecting narrative entirely; it remains how humans are actually persuaded.",
+   "pairs_with": [
+    "mm.hindsight-bias",
+    "mm.survivorship-bias",
+    "mm.randomness"
+   ],
+   "tension_with": [
+    "mm.probabilistic-thinking",
+    "mm.randomness",
+    "mm.plot"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.first-conclusion-bias",
+   "legacy_id": 90,
+   "name": "First-Conclusion Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Anchoring and early-hypothesis lock-in are documented (Tversky and Kahneman 1974; primacy in diagnostic reasoning). Sizes vary and expertise reduces some of it.",
+   "origin": {
+    "author": "Charlie Munger",
+    "work": "The Psychology of Human Misjudgment",
+    "type": "practitioner",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1995
+   },
+   "source_verified": false,
+   "summary": "The first plausible explanation tends to stop the search for others. Treat the first conclusion as one candidate and deliberately generate alternatives.",
+   "key_question": "What are my second and third hypotheses?",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "fast certainty",
+    "the obvious answer",
+    "time pressure on a judgement"
+   ],
+   "produces": "at least two rival hypotheses with discriminating tests",
+   "failure_mode": "Endless option generation that prevents any decision being made.",
+   "pairs_with": [
+    "mm.confirmation-bias-and-falsification",
+    "mm.occams-razor",
+    "mm.inversion"
+   ],
+   "tension_with": [
+    "mm.tendency-to-want-to-do-something"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.overgeneralization-from-small-samples",
+   "legacy_id": 91,
+   "name": "Overgeneralization from Small Samples",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Amos Tversky; Daniel Kahneman",
+    "work": "Belief in the Law of Small Numbers",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1971
+   },
+   "source_verified": false,
+   "summary": "A few cases can look like a rule. Small samples swing widely by chance, so gather more instances before generalising.",
+   "key_question": "How many cases is this rule built on, and where does it stop applying?",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "'always' and 'never' claims",
+    "one bad experience generalised",
+    "a single case study"
+   ],
+   "produces": "scope limit on the claim",
+   "failure_mode": "Refusing to act until n is large, in domains where n is never large.",
+   "pairs_with": [
+    "mm.sampling",
+    "mm.tendency-to-stereotype",
+    "mm.survivorship-bias"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.relative-satisfaction-misery",
+   "legacy_id": 92,
+   "name": "Relative Satisfaction/Misery",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Income comparison affects reported well-being (Easterlin 1974; Luttmer 2005). Whether absolute income also matters is disputed (Stevenson and Wolfers 2008).",
+   "origin": {
+    "author": "Richard Easterlin",
+    "work": "Does Economic Growth Improve the Human Lot?",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1974
+   },
+   "source_verified": false,
+   "summary": "Satisfaction depends on comparison with expectations, past experience and other people more than on absolute conditions. A better situation can feel worse.",
+   "key_question": "Compared to what, and who chose that comparison?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "dissatisfaction despite objective gains",
+    "compensation perception",
+    "goal setting"
+   ],
+   "produces": "named comparison set and its alternatives",
+   "failure_mode": "Dismissing real problems as 'merely relative'.",
+   "pairs_with": [
+    "mm.envy-and-jealousy",
+    "mm.sensitivity-to-fairness"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.commitment-and-consistency-bias",
+   "legacy_id": 93,
+   "name": "Commitment and Consistency Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Cognitive dissonance findings (Festinger 1957) and foot-in-the-door effects are documented; several classic paradigms replicate with smaller effects than first reported.",
+   "origin": {
+    "author": "Leon Festinger",
+    "work": "A Theory of Cognitive Dissonance",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1957
+   },
+   "source_verified": false,
+   "summary": "Once people commit, publicly or privately, they tend to act consistently with it even when evidence changes. Revisit commitments as if making them fresh.",
+   "key_question": "Am I holding this because it is right, or because I already said it?",
+   "stages": [
+    "decide",
+    "review"
+   ],
+   "use_when": [
+    "sunk cost",
+    "publicly stated positions",
+    "long-running projects"
+   ],
+   "produces": "reassessment made independent of prior commitment",
+   "failure_mode": "Abandoning commitments the moment they become costly, which destroys trust.",
+   "pairs_with": [
+    "mm.first-conclusion-bias",
+    "mm.confirmation-bias-and-falsification",
+    "mm.hindsight-bias"
+   ],
+   "tension_with": [
+    "mm.trust"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.hindsight-bias",
+   "legacy_id": 94,
+   "name": "Hindsight Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Fischhoff (1975) found outcome knowledge inflates 'I knew it' judgments. It replicates widely and is hard to remove.",
+   "origin": {
+    "author": "Baruch Fischhoff",
+    "work": "Hindsight is not equal to foresight",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1975
+   },
+   "source_verified": false,
+   "summary": "Once the outcome is known, it seems to have been predictable all along. Record your expectations beforehand so you can judge decisions on what was knowable.",
+   "key_question": "What did I actually record before the outcome was known?",
+   "stages": [
+    "review"
+   ],
+   "use_when": [
+    "post-mortems",
+    "performance review",
+    "'it was obvious in retrospect'"
+   ],
+   "produces": "comparison against a decision log",
+   "failure_mode": "Refusing to learn from outcomes at all on the grounds that hindsight is unreliable.",
+   "pairs_with": [
+    "mm.narrative-instinct",
+    "mm.randomness",
+    "mm.survivorship-bias"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.sensitivity-to-fairness",
+   "legacy_id": 95,
+   "name": "Sensitivity to Fairness",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Ultimatum-game rejections of unfair offers (Güth 1982) replicate across many societies; the threshold varies by culture.",
+   "origin": {
+    "author": "Werner Güth; Rolf Schmittberger; Bernd Schwarze",
+    "work": "An Experimental Analysis of Ultimatum Bargaining",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1982
+   },
+   "source_verified": false,
+   "summary": "People react strongly to treatment they see as unfair, even at a cost to themselves. Systems that feel unfair invite resistance however efficient they are.",
+   "key_question": "Will this be experienced as fair, and by whose standard?",
+   "stages": [
+    "execute"
+   ],
+   "use_when": [
+    "compensation and promotion",
+    "layoffs and policy",
+    "resource allocation"
+   ],
+   "produces": "fairness impact assessment per affected group",
+   "failure_mode": "Fairness optics substituted for fair outcomes, which is detected and punished.",
+   "pairs_with": [
+    "mm.envy-and-jealousy",
+    "mm.relative-satisfaction-misery",
+    "mm.incentives"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.overestimate-consistency-of-behavior",
+   "legacy_id": 96,
+   "name": "Overestimate Consistency of Behavior",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Correspondence bias (Jones and Harris 1967; Ross 1977) replicates; strength differs across cultures. Behaviour has stable and situational components.",
+   "origin": {
+    "author": "Lee Ross",
+    "work": "The Intuitive Psychologist and His Shortcomings",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1977
+   },
+   "source_verified": false,
+   "summary": "We attribute others' behaviour to their personality and underweight the situation they were in. The same person can act very differently in different contexts.",
+   "key_question": "Trait or situation: what would I conclude if I could only see the context?",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "judging others' behaviour",
+    "performance problems",
+    "interpersonal conflict"
+   ],
+   "produces": "situational alternative explanation alongside the trait one",
+   "failure_mode": "Excusing repeated behaviour as situational when the pattern is the evidence.",
+   "pairs_with": [
+    "mm.setting",
+    "mm.hanlons-razor",
+    "mm.relativity"
+   ],
+   "tension_with": [
+    "mm.character"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.influence-of-stress",
+   "legacy_id": 97,
+   "name": "Influence of Stress",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Acute stress impairs prefrontal function and shifts people toward habit in laboratory studies (Arnsten 2009; Schwabe and Wolf). Evidence is mostly acute-stress lab work.",
+   "origin": {
+    "author": "Amy Arnsten",
+    "work": "Stress signalling pathways that impair prefrontal cortex structure and function",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 2009
+   },
+   "source_verified": false,
+   "summary": "Under stress, people fall back on habits and quick reactions and are more open to bias. Expect worse judgment in a crisis and set up decisions in advance.",
+   "key_question": "What state am I deciding from, and what does that state degrade?",
+   "stages": [
+    "execute"
+   ],
+   "use_when": [
+    "crisis and deadline pressure",
+    "fatigue",
+    "emotionally charged conflict"
+   ],
+   "produces": "state check plus deferral rule for reversible decisions",
+   "failure_mode": "Using stress as grounds to dismiss a sound decision that was made under pressure.",
+   "pairs_with": [
+    "mm.algorithms",
+    "mm.performance"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.survivorship-bias",
+   "legacy_id": 98,
+   "name": "Survivorship Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Abraham Wald",
+    "work": "Statistical Research Group memoranda on aircraft survivability",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1943
+   },
+   "source_verified": false,
+   "summary": "We see the cases that survived and miss those that failed, so lessons drawn from survivors alone can be wrong. Look for the missing failures before drawing conclusions.",
+   "key_question": "Where are the ones who did the same thing and failed?",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "success case studies",
+    "best-practice benchmarking",
+    "founder or career advice"
+   ],
+   "produces": "missing-losers analysis and what it does to the inference",
+   "failure_mode": "Dismissing all learning from winners; some winners did have a real edge.",
+   "pairs_with": [
+    "mm.replication",
+    "mm.randomness",
+    "mm.sampling"
+   ],
+   "tension_with": [
+    "mm.replication"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.tendency-to-want-to-do-something",
+   "legacy_id": 99,
+   "name": "Tendency to Want to Do Something",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "evidence_note": "Penalty-kick goalkeepers dive more often than staying put would justify (Bar-Eli et al. 2007). Generalisation to other domains rests on fewer studies.",
+   "origin": {
+    "author": "Michael Bar-Eli et al.",
+    "work": "Action bias among elite soccer goalkeepers",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 2007
+   },
+   "source_verified": false,
+   "summary": "There is a strong pull to act, especially when watched or under pressure, even when waiting would be better. Ask whether action improves the outcome or only relieves discomfort.",
+   "key_question": "Is action required, or am I acting to feel useful?",
+   "stages": [
+    "decide"
+   ],
+   "use_when": [
+    "crisis response",
+    "visible problem with unclear cause",
+    "new leadership wanting impact"
+   ],
+   "produces": "do-nothing option explicitly costed alongside the others",
+   "failure_mode": "Inaction rationalised as discipline when the cost of waiting is the larger risk.",
+   "pairs_with": [
+    "mm.ecosystems",
+    "mm.second-order-thinking",
+    "mm.margin-of-safety"
+   ],
+   "tension_with": [
+    "mm.activation-energy",
+    "mm.first-conclusion-bias"
+   ],
+   "status": "seed"
+  },
+  {
+   "slug": "mm.confirmation-bias-and-falsification",
+   "legacy_id": 100,
+   "name": "Confirmation Bias and Falsification",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Karl Popper; Peter Wason",
+    "work": "The Logic of Scientific Discovery; On the failure to eliminate hypotheses",
+    "type": "academic",
+    "note": "Selection follows Farnam Street's Great Mental Models",
+    "year": 1960
+   },
+   "source_verified": false,
+   "summary": "We notice and seek evidence that supports what we already think. Counter it by stating what would show you wrong and looking for that evidence first.",
+   "key_question": "What evidence would change my mind, and have I gone looking for it?",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "any strongly held belief",
+    "research and analysis",
+    "hypothesis about cause"
+   ],
+   "produces": "explicit falsification test and where to run it",
+   "failure_mode": "Demanding falsifiability of questions that are not empirical.",
+   "pairs_with": [
+    "mm.first-conclusion-bias",
+    "mm.denial",
+    "mm.liking-loving-and-disliking-hating",
+    "mm.bias-from-incentives"
+   ],
+   "tension_with": [],
+   "status": "seed"
+  }
+ ]
+}
