@@ -6,7 +6,7 @@ A red-team and critical-thinking skill for Claude, Claude Code and Hermes: steel
 
 <p align="center">
   <a href="#install"><img alt="Install" src="https://img.shields.io/badge/install-1%20command-C0391F"></a>
-  <img alt="Methods" src="https://img.shields.io/badge/methods-13-14161A">
+  <img alt="Methods" src="https://img.shields.io/badge/methods-104-14161A">
   <img alt="Works with" src="https://img.shields.io/badge/works%20with-Claude%20·%20Claude%20Code%20·%20Hermes-5B6270">
   <img alt="License" src="https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-5B6270">
 </p>
@@ -14,8 +14,6 @@ A red-team and critical-thinking skill for Claude, Claude Code and Hermes: steel
 ## What it does
 
 Ask an AI what it thinks of your plan and it will mostly agree. Panta Rhei Challenge steelmans the idea first, then runs four to eight named attacks chosen for what you brought (a plan, a claim, a decision you favour, a judgment about a person) and rebuilds the idea from what survives. You get the stronger version, its weakest link and a survival score where one fatal flaw caps the result.
-
-<p align="center"><img src="assets/demo.gif" alt="A Challenge session: a plan steelmanned, attacked by six named audits, and rebuilt with a survival score" width="85%"></p>
 
 ## Try it
 

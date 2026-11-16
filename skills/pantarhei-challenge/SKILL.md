@@ -11,7 +11,7 @@ objections; it is a verdict on what survives and the stronger version that remai
 
 Load before starting:
 - `references/catalog.json`: red-team methods.
-- `references/models.json`: all 32 audit models from the shared library, plus inversion,
+- `references/models.json`: all 59 audit models from the shared library, plus inversion,
   second-order thinking and falsification.
 - `references/shared-rules.md`.
 
@@ -27,12 +27,19 @@ Map the object to the audits (from the shared protocol):
 
 | Object | Attack with |
 |---|---|
-| A claim, study, report or statistic | mm.bias-from-incentives, mm.sampling, mm.failure-to-account-for-base-rates, mm.survivorship-bias, challenge.lateral-reading, challenge.extraordinary-claims |
-| A plan or project | decide.premortem (shared), challenge.key-assumptions, mm.second-order-thinking, mm.inversion, challenge.chestertons-fence |
+| A claim, study, report or statistic | mm.bias-from-incentives, mm.sampling, mm.failure-to-account-for-base-rates, mm.survivorship-bias, challenge.lateral-reading, challenge.extraordinary-claims, challenge.quality-of-information, challenge.sift-check |
+| A plan or project | decide.premortem (shared), challenge.key-assumptions, mm.second-order-thinking, mm.inversion, challenge.chestertons-fence, challenge.robustness-stress-test, challenge.scenario-planning |
 | A decision the user favours | mm.confirmation-bias-and-falsification, mm.first-conclusion-bias, mm.commitment-and-consistency-bias, challenge.consider-opposite |
 | A judgment about a person | mm.overestimate-consistency-of-behavior, mm.hanlons-razor, mm.relativity |
 | An explanation of an outcome | mm.hindsight-bias, mm.randomness, mm.narrative-instinct, challenge.ach |
-| A consensus or trend | mm.social-proof, mm.bubbles, challenge.dialectical-inquiry |
+| A consensus or trend | mm.social-proof, mm.bubbles, challenge.dialectical-inquiry, challenge.paradigm-audit, challenge.research-programme-audit |
+| An argument, essay or pitch (a text) | challenge.toulmin-audit, challenge.argument-mapping, challenge.fallacy-sweep, challenge.principle-of-charity |
+| A forecast, projection or timeline | challenge.estimative-language, challenge.reference-class-forecasting, challenge.calibration-scoring, mm.planning-fallacy |
+| A group or team decision | mm.groupthink, mm.abilene-paradox, mm.pluralistic-ignorance, challenge.noise-audit |
+| Advice or a recommendation | challenge.skin-in-the-game, challenge.adler-teleology, mm.bias-from-incentives |
+| A plan driven by a metric or target | challenge.goodhart-audit, challenge.campbell-audit, challenge.cobra-effect |
+| A person's stated reasons or motives | challenge.adler-private-logic, challenge.adler-compensation, challenge.adler-mistaken-goals, challenge.misperception-audit |
+| A bet, stake or irreversible commitment | challenge.ergodicity-audit, challenge.reversibility-check, challenge.kelly-sizing, challenge.margin-of-safety |
 | The user's own certainty | challenge.crux, challenge.update-triggers, mm.denial |
 
 Run four to eight attacks. Fewer if one is fatal.

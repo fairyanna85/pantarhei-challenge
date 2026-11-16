@@ -1,7 +1,7 @@
 {
  "skill": "pantarhei-challenge",
  "schema": "core/schema/method.schema.json",
- "count": 18,
+ "count": 109,
  "records": [
   {
    "slug": "challenge.steelman",
@@ -719,6 +719,2999 @@
     "solve.smallest-test"
    ],
    "borrowed_from": "pantarhei-solve"
+  },
+  {
+   "slug": "challenge.fallacy-sweep",
+   "name": "Fallacy sweep",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Charles L. Hamblin",
+    "work": "Fallacies",
+    "year": 1970,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Runs the argument against the fallacy canon and names each structurally invalid move: false dichotomy, begging the question, equivocation, slippery slope, ad hominem, appeal to ignorance, red herring, special pleading, no true Scotsman, moving the goalposts, post hoc.",
+   "key_question": "Which step of this argument would still look valid if its conclusion were false — and which named fallacy is doing the work there?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the fallacy sweep test"
+   ],
+   "produces": "a written fallacy sweep finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Degenerates into label-calling: naming a fallacy without showing the move actually fails in this instance, and crying fallacy at arguments that are weak but not invalid (the fallacy fallacy).",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "List the argument's moves in order, one line each.",
+    "Check each move against the standard fallacies: straw man, false dilemma, ad hominem, appeal to authority, slippery slope, circularity, hasty generalisation, equivocation.",
+    "For each hit, restate the move without the fallacy and see whether the conclusion still follows."
+   ]
+  },
+  {
+   "slug": "challenge.toulmin-audit",
+   "name": "Toulmin audit",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Stephen Toulmin",
+    "work": "The Uses of Argument",
+    "year": 1958,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Dissects an argument into claim, grounds, warrant, backing, qualifier and rebuttal, exposing the unstated warrant that connects evidence to conclusion and the qualifier the claim quietly dropped.",
+   "key_question": "What is the warrant — the general rule that lets this evidence count for this claim — and what backs the warrant itself?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the toulmin audit test"
+   ],
+   "produces": "a written toulmin audit finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Becomes diagram-filling: a tidy map of a bad argument, and it cannot judge whether the grounds are true, only whether the structure is complete.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write out the claim, the grounds offered for it, and the conclusion actually drawn.",
+    "Name the warrant: the unstated rule that is supposed to carry the grounds to the claim.",
+    "Test the warrant's backing and look for the qualifier and rebuttal the argument omitted."
+   ],
+   "pairs_with": [
+    "challenge.argument-mapping",
+    "challenge.fallacy-sweep"
+   ]
+  },
+  {
+   "slug": "challenge.critical-discussion-rules",
+   "name": "Critical discussion rules (pragma-dialectics)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Frans H. van Eemeren and Rob Grootendorst",
+    "work": "Speech Acts in Argumentative Discussions; A Systematic Theory of Argumentation",
+    "year": 1984,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Scores a debate against ten rules for resolving a difference of opinion on the merits — freedom, burden of proof, standpoint, relevance, unexpressed premise, starting point, argument scheme, validity, closure, usage — treating each fallacy as a specific rule violation.",
+   "key_question": "Which discussion rule was broken, by whom, and at which stage — and would the standpoint survive if the rule were enforced?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the critical discussion rules test"
+   ],
+   "produces": "a written critical discussion rules (pragma-dialectics) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Proceduralism: winning on rule violations while the substantive evidence goes unexamined, and the ideal model fits real, messy, power-asymmetric disputes badly.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Identify the stage the discussion is actually in: confrontation, opening, argumentation or conclusion.",
+    "Check the pragma-dialectical rules: no blocking the other side's standpoint, burden of proof on whoever advances a claim, no attacking a standpoint the other side does not hold.",
+    "Name each rule breach as a fallacy with its discussion cost, not as a debating foul."
+   ]
+  },
+  {
+   "slug": "challenge.argument-mapping",
+   "name": "Argument mapping",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Tim van Gelder (Austhink)",
+    "work": "Enhancing Deliberation Through Computer-Supported Argument Mapping",
+    "year": 2007,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Draws the argument as a tree of contention, reasons, objections and rebuttals so that unsupported premises, single-strand dependence and missing objections become visible at a glance.",
+   "key_question": "If every box in this map had to carry its own evidence, which boxes would be empty — and does the whole conclusion hang on one strand?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the argument mapping test"
+   ],
+   "produces": "a written argument mapping finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The map inherits the mapper's reading: a contested interpretation gets frozen into boxes, and visual completeness is mistaken for soundness.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Break the text into single claims, one per box.",
+    "Draw the support and objection arrows between them; mark anything asserted without support.",
+    "Attack the load-bearing boxes: the ones whose failure collapses the most downstream claims."
+   ],
+   "pairs_with": [
+    "challenge.toulmin-audit",
+    "challenge.crux"
+   ]
+  },
+  {
+   "slug": "challenge.socratic-elenchus",
+   "name": "Socratic elenchus",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Socrates, as recorded by Plato",
+    "work": "Plato's early dialogues (Euthyphro, Apology)",
+    "year": -399,
+    "type": "tradition"
+   },
+   "source_verified": true,
+   "summary": "Tests a definition or claim by drawing out its owner's own admissions, then producing a case the owner accepts that contradicts the definition, forcing revision rather than rebuttal from outside.",
+   "key_question": "By your own admissions, does this case count — and if it does, does your definition survive it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the socratic elenchus test"
+   ],
+   "produces": "a written socratic elenchus finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Purely destructive: it refutes without building, can humiliate rather than persuade, and only works on claims stated as definitions or universals.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Get the claim stated as a definition or a universal rule.",
+    "Draw out two or three consequences the claimant also accepts.",
+    "Show where the consequences contradict the original claim, and let the claimant revise it."
+   ]
+  },
+  {
+   "slug": "challenge.stasis-check",
+   "name": "Stasis check",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Hermagoras of Temnos (transmitted by Cicero and Quintilian)",
+    "work": "Stasis doctrine, in Cicero's De Inventione and Quintilian's Institutio Oratoria",
+    "year": -87,
+    "type": "tradition"
+   },
+   "source_verified": true,
+   "summary": "Locates the actual point of dispute among four stases — fact (did it happen?), definition (what is it?), quality (how good or serious is it?) and procedure (is this the right forum or process?) — and flags parties arguing at different stases past each other.",
+   "key_question": "Which question are we actually disputing — fact, definition, quality or procedure — and is the other side answering a different one?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the stasis check test"
+   ],
+   "produces": "a written stasis check finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Taxonomy for its own sake: real disputes often sit at several stases at once, and naming the stasis does not settle it.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Ask which of the four stases the dispute is really at: fact, definition, quality, or procedure/jurisdiction.",
+    "Check whether the two sides are arguing at different stases and talking past each other.",
+    "Restart the argument at the lowest unsettled stasis; everything above it is premature."
+   ]
+  },
+  {
+   "slug": "challenge.scholastic-disputation",
+   "name": "Scholastic disputation",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Medieval universities; Thomas Aquinas (exemplar)",
+    "work": "The quaestio format of the Summa Theologiae",
+    "year": 1274,
+    "type": "tradition"
+   },
+   "source_verified": true,
+   "summary": "Structures an attack as objections stated in their strongest form, in order, followed by the reply, followed by a point-by-point answer to each objection — nothing objected is left unanswered and nothing answered was not first stated fairly.",
+   "key_question": "What are the strongest objections to this position, stated as their holders would state them — and does the position answer every one?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the scholastic disputation test"
+   ],
+   "produces": "a written scholastic disputation finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Ritual completeness: weak objections are padded in to be knocked down, and the form can simulate thoroughness while the one fatal objection is quietly omitted.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "State the question and the strongest objections to your own position, in the opponents' best form.",
+    "Give the contrary authority or principle (sed contra) in one line.",
+    "Answer the question, then reply to each objection in turn, conceding what must be conceded."
+   ]
+  },
+  {
+   "slug": "challenge.principle-of-charity",
+   "name": "Principle of charity",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Neil L. Wilson; developed by W. V. O. Quine and Donald Davidson",
+    "work": "Substances without Substrata (Review of Metaphysics); Davidson, On the Very Idea of a Conceptual Scheme",
+    "year": 1959,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Before judging an ambiguous claim, fixes its interpretation as the version that makes the speaker most reasonable and most of their statements true — charity settles what was claimed; evaluation comes after.",
+   "key_question": "Is there a reading of this claim under which it is sensible — and are we attacking the claim, or our least charitable translation of it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the principle of charity test"
+   ],
+   "produces": "a written principle of charity finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Over-charity: the claim is improved past anything its author meant or could defend, and the red team ends up refuting its own invention.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.steelman",
+    "challenge.ideological-turing-test"
+   ]
+  },
+  {
+   "slug": "challenge.rogerian-restatement",
+   "name": "Rogerian restatement",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Carl Rogers; Richard Young, Alton Becker and Kenneth Pike",
+    "work": "Communication: Its Blocking and Its Facilitation (1951); Rhetoric: Discovery and Change (1970)",
+    "year": 1951,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Requires restating the other side's position to their satisfaction and delineating where it is valid before stating one's own, reducing the threat response that blocks any revision of view.",
+   "key_question": "Can we state their position so that they say 'yes, that is what I think' — and can we name the conditions under which they are right?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "about to commit to this",
+    "stress-test this choice before it is final",
+    "run the rogerian restatement test"
+   ],
+   "produces": "a written rogerian restatement finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Mistaken for agreement: restatement without a following position becomes capitulation, and with a bad-faith counterpart it buys nothing.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Restate the other side's position until they confirm you have it right.",
+    "State the contexts in which their position is valid, in their terms.",
+    "Only then present your position, framed as completing theirs where the contexts differ."
+   ]
+  },
+  {
+   "slug": "challenge.ideological-turing-test",
+   "name": "Ideological Turing test",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Bryan Caplan",
+    "work": "The Ideological Turing Test (EconLog)",
+    "year": 2011,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Tests claimed understanding of an opposing view by requiring a statement of it good enough that its actual holders cannot distinguish it from one of their own.",
+   "key_question": "Could a holder of the opposing view read our statement of it and take it for their own — and if not, what exactly did we get wrong?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a consensus",
+    "check this consensus before relying on it",
+    "run the ideological turing test test"
+   ],
+   "produces": "a written ideological turing test finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Tests mimicry, not truth: passing proves understanding of a position, not that the position (or our rejection of it) is correct.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write the opposing position's case as a sincere believer would write it, first person.",
+    "Check it against real believers' texts for tells: caricature, wrong priorities, missing insider concerns.",
+    "If the imitation fails, the disagreement is not yet understood well enough to attack."
+   ]
+  },
+  {
+   "slug": "challenge.bayesian-updating",
+   "name": "Bayesian updating",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Thomas Bayes; Pierre-Simon Laplace",
+    "work": "An Essay Towards Solving a Problem in the Doctrine of Chances",
+    "year": 1763,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Forces every piece of evidence to be weighed as a likelihood ratio — how much more expected is this observation if the claim is true than if it is false — applied to a stated prior, so weak and non-diagnostic evidence stops moving beliefs.",
+   "key_question": "What was the prior, and would we expect to see this evidence anyway if the claim were false — if so, by how much should it actually move us?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the bayesian updating test"
+   ],
+   "produces": "a written bayesian updating finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "False precision: priors and likelihoods are often guesses dressed as numbers, and the arithmetic lends spurious authority to the inputs.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "State the prior: how likely was this claim before this evidence arrived?",
+    "Ask the diagnostic question: how likely is this evidence if the claim is false?",
+    "Move the probability by the ratio, not by the headline; write down the new number or range."
+   ],
+   "pairs_with": [
+    "challenge.calibration-scoring",
+    "challenge.estimative-language"
+   ]
+  },
+  {
+   "slug": "challenge.best-explanation",
+   "name": "Inference to the best explanation",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Gilbert Harman (term); Charles Sanders Peirce (abduction)",
+    "work": "The Inference to the Best Explanation (Review of Metaphysics)",
+    "year": 1965,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Ranks rival explanations of the same evidence by explanatory virtues — scope, simplicity, fit with background knowledge, fruitfulness, and how little they must add ad hoc — instead of merely listing hypotheses.",
+   "key_question": "Of the live explanations, which explains the most with the fewest additions — and what does the favoured one leave unexplained?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "which explanation actually fits",
+    "several stories could explain this",
+    "run the inference to the best explanation test"
+   ],
+   "produces": "a written inference to the best explanation finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The best of a bad lot: the loveliest explanation can still be false, and 'best' quietly slides from most likely to most satisfying.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List the live explanations of the evidence, including the dull ones.",
+    "Score each on scope, fit with what else is known, and how much it has to invent.",
+    "Keep the best explanation as a working hypothesis and name the observation that would dethrone it."
+   ]
+  },
+  {
+   "slug": "challenge.severe-test",
+   "name": "Severe testing (Popper beyond falsification)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Karl Popper",
+    "work": "The Logic of Scientific Discovery; Conjectures and Refutations",
+    "year": 1934,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Credits a claim only for surviving tests it would probably have failed if false — risky predictions and severe probes count; confirmations the claim would produce anyway count for almost nothing.",
+   "key_question": "What test has this claim passed that it would likely have failed if it were wrong — and which of its 'confirmations' were guaranteed either way?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the severe testing test"
+   ],
+   "produces": "a written severe testing (popper beyond falsification) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Severity is judged against background knowledge, which is itself contestable; and some true claims (historical, singular) cannot be put to repeatable severe tests.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Ask what test this claim has passed that it would probably have failed if it were wrong.",
+    "Discount confirmations the claim's defenders went looking for; credit predictions made in advance.",
+    "If no severe test exists, grade the claim as untested, however often it has been repeated."
+   ]
+  },
+  {
+   "slug": "challenge.paradigm-audit",
+   "name": "Paradigm and anomaly audit (Kuhn)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Thomas S. Kuhn",
+    "work": "The Structure of Scientific Revolutions",
+    "year": 1962,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Asks whether a field's reigning framework is quietly accumulating anomalies it reclassifies as puzzles or noise, and whether the evidence for the consensus was gathered with instruments and categories the paradigm itself supplied.",
+   "key_question": "What observations does this field treat as anomalies or non-results — and would the consensus look as solid from outside its own categories?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a consensus",
+    "check this consensus before relying on it",
+    "run the paradigm and anomaly audit test"
+   ],
+   "produces": "a written paradigm and anomaly audit (kuhn) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Over-firing: most anomaly piles are just unsolved normal science, and the audit can make every stable field look like a pre-revolutionary crisis.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Name the paradigm's core commitments and what it treats as a solved problem.",
+    "List the anomalies it currently explains away, files as noise, or postpones.",
+    "Judge whether anomaly-handling is still productive or has become defensive patchwork."
+   ]
+  },
+  {
+   "slug": "challenge.research-programme-audit",
+   "name": "Progressive or degenerating programme (Lakatos)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Imre Lakatos",
+    "work": "Falsification and the Methodology of Scientific Research Programmes",
+    "year": 1970,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Judges a theory or strategy by its trajectory: progressive if its adjustments predict novel facts, degenerating if each fix only patches the latest failure after the fact while the hard core is protected by an ever-thicker belt of excuses.",
+   "key_question": "What has this theory or strategy predicted before the fact lately — and are its recent changes discoveries, or patches applied after each failure?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "which explanation actually fits",
+    "several stories could explain this",
+    "run the progressive or degenerating programme test"
+   ],
+   "produces": "a written progressive or degenerating programme (lakatos) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Hindsight-dependent: programmes can look degenerating for years and then pay off, so the audit counsels patience as often as abandonment and gives no clean stopping rule.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Separate the programme's hard core from its protective belt of adjustable assumptions.",
+    "Check the recent record: do belt changes predict new facts, or only absorb failures after the fact?",
+    "A programme whose changes only absorb failures is degenerating, whatever its pedigree."
+   ]
+  },
+  {
+   "slug": "challenge.fixation-of-belief",
+   "name": "Fixation of belief audit (Peirce)",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Charles Sanders Peirce",
+    "work": "The Fixation of Belief (Popular Science Monthly)",
+    "year": 1877,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Classifies how a belief was actually settled — by tenacity (refusing to reconsider), authority (an institution decreed it), the a priori method (it is agreeable to reason or fashion), or inquiry — and discounts beliefs held by the first three.",
+   "key_question": "How was this belief actually settled — by inquiry, or by tenacity, authority or fashion — and what would its holders do if it were challenged?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a consensus",
+    "check this consensus before relying on it",
+    "run the fixation of belief audit test"
+   ],
+   "produces": "a written fixation of belief audit (peirce) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Genetic fallacy risk: a belief adopted by authority or tenacity can still be true; the audit impeaches the holding, not the proposition.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.mills-collision",
+   "name": "Mill's collision test (dead dogma)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "John Stuart Mill",
+    "work": "On Liberty, chapter 2",
+    "year": 1859,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Holds that a belief never exposed to its strongest opposition decays into dead dogma held as prejudice — so the audit asks when the view last faced a competent opponent, and whether its holders can state the opposing case and why it fails.",
+   "key_question": "When did this view last collide with the strongest case against it — and can its holders state that case, and the grounds on which it is rejected?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a consensus",
+    "check this consensus before relying on it",
+    "run the mill's collision test test"
+   ],
+   "produces": "a written mill's collision test (dead dogma) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Both-sides drift: collision is owed to competent opposition, not to every fringe claim, and the test says nothing about which side wins the collision.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "State the strongest living objection to the belief, not the weakest historical one.",
+    "Check whether believers can say why the objection fails, or only that it is held by the wrong people.",
+    "A belief nobody can defend against its best objection is a dead dogma, held as prejudice."
+   ]
+  },
+  {
+   "slug": "challenge.cartesian-rules",
+   "name": "Cartesian rules audit",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Rene Descartes",
+    "work": "Discourse on the Method; Rules for the Direction of the Mind",
+    "year": 1637,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Applies Descartes' four precepts as an audit: accept nothing not clearly known, divide each difficulty into parts, proceed from the simplest to the most complex, and make enumerations so complete that nothing is omitted.",
+   "key_question": "Which parts of this case were accepted without clear evidence, never divided into parts, or left out of the enumeration altogether?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attack this plan before reality does",
+    "a plan that has never been challenged",
+    "run the cartesian rules audit test"
+   ],
+   "produces": "a written cartesian rules audit finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Demands a certainty most real decisions cannot reach; applied rigidly it produces paralysis and false confidence in whatever survived introspection.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Check the four rules in order: was anything accepted without clear evidence?",
+    "Was the problem divided into parts small enough to judge?",
+    "Was the reasoning ordered from simple to complex, and was the enumeration complete enough to catch omissions?"
+   ]
+  },
+  {
+   "slug": "challenge.baloney-detection-kit",
+   "name": "Baloney detection kit (full)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Carl Sagan",
+    "work": "The Demon-Haunted World: Science as a Candle in the Dark, ch. 12",
+    "year": 1995,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Runs Sagan's full nine-tool kit: independent confirmation of facts, substantive debate on all sides, no reliance on chains of authority, spin multiple hypotheses, try hardest to falsify your own hypothesis, quantify, check every link of the argument chain, Occam's razor, and.",
+   "key_question": "Is there independent confirmation, has every link been checked, and have we tried as hard to falsify our own hypothesis as the other side's?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the baloney detection kit test"
+   ],
+   "produces": "a written baloney detection kit (full) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Checklist theatre: the kit is run ceremonially over a claim already decided, and several tools (Occam, falsifiability) can be gamed by how the claim is framed.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Run Sagan's kit: seek independent confirmation, look for the strongest opposing case, check the proposer's track record and incentives.",
+    "Watch for the kit's named traps: ad hominem, appeal to authority, argument from adverse consequence, straw man, suppressed evidence.",
+    "Grade the claim by how many kit tests it passes unprompted, not by how it feels."
+   ]
+  },
+  {
+   "slug": "challenge.feynman-first-principle",
+   "name": "Feynman's first principle (self-deception audit)",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richard Feynman",
+    "work": "Cargo Cult Science (Caltech commencement address)",
+    "year": 1974,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Applies the principle that you must not fool yourself — and you are the easiest person to fool — by demanding the claimant report everything that could make their result wrong, including the evidence and failed runs they would rather omit.",
+   "key_question": "What has the claimant not told us that they know — the failed attempts, the contrary data, the conditions under which this does not work?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the feynman's first principle test"
+   ],
+   "produces": "a written feynman's first principle (self-deception audit) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Unfalsifiable suspicion: absence of reported weaknesses can reflect a genuinely strong result, and the audit can slide into accusing honest reporters of concealment.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.mertons-norms",
+   "name": "Mertonian norms audit (CUDOS)",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Robert K. Merton",
+    "work": "The Normative Structure of Science",
+    "year": 1942,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Audits the conditions a claim was produced under against science's institutional norms — communalism, universalism, disinterestedness, organised scepticism — flagging secret data, status-based judgement, undisclosed stakes and immunity from criticism.",
+   "key_question": "Was this produced under disinterested, organised scepticism — or in secret, by interested parties, judged by who they are rather than what they showed?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the mertonian norms audit test"
+   ],
+   "produces": "a written mertonian norms audit (cudos) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Idealisation: real science routinely violates the norms and still produces truth, and norm violations impeach the process without settling the claim.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.source-criticism",
+   "name": "Historical source criticism (provenance audit)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Charles-Victor Langlois and Charles Seignobos",
+    "work": "Introduction to the Study of History",
+    "year": 1898,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Subjects a document or dataset to external criticism before content is weighed — authenticity, date, authorship, chain of transmission — then internal criticism: what the author could have known, and what interest shaped the record.",
+   "key_question": "Before what it says: what is this source, when and by whom was it actually made, how did it reach us — and what did its maker know and want?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the historical source criticism test"
+   ],
+   "produces": "a written historical source criticism (provenance audit) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Provenance perfectionism: authentic sources lie and late, copied sources can preserve truth, so a failed pedigree impeaches but does not refute.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "External criticism first: is the document what it claims to be — author, date, provenance, chain of custody?",
+    "Internal criticism next: what did the author intend, what could they actually know, what did they gain?",
+    "Only then use the content, discounted by everything the first two steps found."
+   ]
+  },
+  {
+   "slug": "challenge.sift-check",
+   "name": "SIFT check",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Mike Caulfield",
+    "work": "SIFT (The Four Moves), Hapgood",
+    "year": 2019,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Runs four fast moves on an online claim: Stop, Investigate the source, Find better coverage, and Trace claims, quotes and media back to their original context — the trace move catches the clipped quote and the recycled statistic that lateral reading alone misses.",
+   "key_question": "Have we traced this claim, quote or figure back to its original context — and does it still say the same thing there?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the sift check test"
+   ],
+   "produces": "a written sift check finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Speed over depth: SIFT settles whether something is worth trusting at a glance, not whether it is true, and 'better coverage' can converge on the same single upstream source.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Stop: do not share or rely on the claim yet.",
+    "Investigate the source: who is behind it, in thirty seconds of lateral checking.",
+    "Find better coverage and trace the claim, quote or figure back to its original context."
+   ],
+   "pairs_with": [
+    "challenge.lateral-reading"
+   ]
+  },
+  {
+   "slug": "challenge.propaganda-devices",
+   "name": "Propaganda device sweep",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Institute for Propaganda Analysis (Clyde R. Miller et al.)",
+    "work": "How to Detect Propaganda (Propaganda Analysis, vol. 1 no. 2)",
+    "year": 1937,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "Sweeps a pitch or campaign for the seven devices: name-calling, glittering generalities, transfer, testimonial, plain folks, card stacking and bandwagon — persuasion carried by labels, virtue words and stacked selection instead of evidence.",
+   "key_question": "Strip the labels, virtue words, endorsements and selected facts: what evidence remains once the seven devices are removed?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the propaganda device sweep test"
+   ],
+   "produces": "a written propaganda device sweep finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Device-spotting becomes the conclusion: a message can use testimonials and virtue words and still be right, and the sweep detects technique, not falsehood.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Sweep the text for the seven devices: name-calling, glittering generalities, transfer, testimonial, plain folks, card stacking, bandwagon.",
+    "For each hit, rewrite the sentence with the device removed and see what evidence remains.",
+    "Judge the claim on the residue, not on the framing."
+   ]
+  },
+  {
+   "slug": "challenge.open-minded-search",
+   "name": "Actively open-minded thinking audit",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Jonathan Baron",
+    "work": "Rationality and Intelligence; Thinking and Deciding",
+    "year": 1985,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Scores the thinking itself against AOT standards: possibilities, evidence and goals searched thoroughly and fairly, with counter-evidence sought as hard as confirming evidence and weighed without myside discount — insufficient or one-sided search fails the audit regardless of.",
+   "key_question": "Was the search fair — were alternatives and counter-evidence looked for as hard as confirmations, and weighed by the same standard when found?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "about to commit to this",
+    "stress-test this choice before it is final",
+    "run the actively open-minded thinking audit test"
+   ],
+   "produces": "a written actively open-minded thinking audit finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Search can always be extended, so the audit needs a stopping judgement it cannot itself supply; and fair searchers can still reach wrong conclusions.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.intellectual-humility-audit",
+   "name": "Intellectual humility audit",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Linda Zagzebski",
+    "work": "Virtues of the Mind",
+    "year": 1996,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Audits the knower rather than the claim: whether confidence tracks actual competence and evidence, limits are owned, and the arguer shows the intellectual virtues (humility, courage, carefulness) rather than the vices (arrogance, vanity, closed-mindedness) that predict.",
+   "key_question": "Does this person's confidence match their competence and evidence — and do they behave like someone who could discover they are wrong?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a judgment of a person",
+    "check this judgment of a person before relying on it",
+    "run the intellectual humility audit test"
+   ],
+   "produces": "a written intellectual humility audit finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Slides into character judgement and ad hominem: a humble person can be wrong and an arrogant one right, so the audit may only discount testimony, never refute a claim.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.quality-of-information",
+   "name": "Quality of Information Check",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Central Intelligence Agency",
+    "work": "A Tradecraft Primer: Structured Analytic Techniques for Improving Intelligence Analysis",
+    "year": 2009,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "Grades each load-bearing source for reliability, completeness and independence before the argument built on it is trusted.",
+   "key_question": "If your single weakest source is wrong, which of your conclusions falls with it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the quality of information check test"
+   ],
+   "produces": "a written quality of information check finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Degrades into ritual grading — reliability codes assigned by gut feel, so the check certifies the evidence instead of testing it.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Grade each key source: access, reliability history, and whether it reports or repeats.",
+    "Separate what is directly observed from what is inferred, assumed or passed along.",
+    "Downgrade any conclusion resting on single-source, circular or stale reporting."
+   ],
+   "pairs_with": [
+    "challenge.source-criticism",
+    "challenge.icd-203-audit"
+   ]
+  },
+  {
+   "slug": "challenge.estimative-language",
+   "name": "Estimative language check (Kent's yardstick)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Sherman Kent",
+    "work": "Words of Estimative Probability, Studies in Intelligence",
+    "year": 1964,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "Forces every probability word in a claim ('likely', 'serious possibility') onto an agreed numerical range, exposing how much of the apparent agreement is just vague language.",
+   "key_question": "What number, out of 100, do you actually mean by 'likely' — and would your reader pick the same number?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the estimative language check test"
+   ],
+   "produces": "a written estimative language check (kent's yardstick) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "False precision: numbers imply a calibration the analyst does not have, and the yardstick becomes decoration on the same guess.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Find every probability word in the claim: likely, probably, almost certain, unlikely.",
+    "Force each onto Kent's yardstick as a number or range, and check the speaker accepts the number.",
+    "Flag any conclusion whose confidence word and evidence strength point in different directions."
+   ]
+  },
+  {
+   "slug": "challenge.icd-203-audit",
+   "name": "ICD 203 tradecraft standards audit",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Office of the Director of National Intelligence",
+    "work": "Intelligence Community Directive 203: Analytic Standards (issued 2007, revalidated 2015)",
+    "year": 2015,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "Scores an argument against nine fixed standards: sourcing, expressed uncertainty, separation of information from assumption and judgment, analysis of alternatives, relevance, logical argumentation, consistency with prior judgments, accuracy, and effective visuals.",
+   "key_question": "Can a reader tell, at every step, what is reported fact, what is your assumption, and what is your judgment — and how sure you are?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the icd 203 tradecraft standards audit test"
+   ],
+   "produces": "a written icd 203 tradecraft standards audit finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Box-ticking: the product is edited until it looks compliant while the underlying reasoning stays untouched.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Check the claim separates what is known, what is assumed and what is judged.",
+    "Check sourcing is described well enough for a reader to weigh it, and uncertainty is expressed, not buried.",
+    "Check alternatives were considered and the reasoning does not leap past its evidence."
+   ]
+  },
+  {
+   "slug": "challenge.linchpin-analysis",
+   "name": "Linchpin analysis",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Douglas MacEachin",
+    "work": "Foreword to Richards J. Heuer Jr., Psychology of Intelligence Analysis (CIA Center for the Study of Intelligence)",
+    "year": 1999,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "Identifies the few drivers of the outcome and the linchpin premises about those drivers that hold the whole conclusion up, then concentrates the attack — and the warning indicators — on those premises alone.",
+   "key_question": "Which two or three premises, if they gave way, would bring the entire conclusion down with them?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a claim / decision",
+    "check this claim / decision before relying on it",
+    "run the linchpin analysis test"
+   ],
+   "produces": "a written linchpin analysis finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The analyst picks linchpins that are easy to defend and misses the real driver, so the argument is stress-tested everywhere except where it can break.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List the assumptions the conclusion rests on, then find the few about the key drivers: the linchpins.",
+    "For each linchpin ask how much would have to change for it to fail, and how we would know.",
+    "Concentrate the attack and the monitoring on the linchpins; the rest is decoration."
+   ],
+   "pairs_with": [
+    "challenge.key-assumptions"
+   ]
+  },
+  {
+   "slug": "challenge.mirror-imaging",
+   "name": "Mirror imaging check",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Urie Bronfenbrenner",
+    "work": "The Mirror Image in Soviet-American Relations: A Social Psychologist's Report, Journal of Social Issues",
+    "year": 1961,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Tests whether a judgment about another actor simply projects our own values, cost calculus and decision style onto them, so that their behaviour is 'predicted' by asking what we would do.",
+   "key_question": "Are you forecasting what they will do, or what you would do in their chair?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a judgment of a person",
+    "check this judgment of a person before relying on it",
+    "run the mirror imaging check test"
+   ],
+   "produces": "a written mirror imaging check finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Overcorrection: assuming the other side is wholly alien, and missing the constraints and incentives we genuinely do share.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write down how we expect the other side to reason and what we assume they value.",
+    "Check each expectation for projection: is it their logic, or ours in their clothes?",
+    "Rebuild the expectation from their history, constraints and stated doctrine."
+   ]
+  },
+  {
+   "slug": "challenge.red-hat",
+   "name": "Red Hat Analysis",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Rebuilds the situation entirely inside the other actor's worldview — their history, fears, domestic pressures and information — and re-reads their behaviour from in there.",
+   "key_question": "Seen through their eyes, with their constraints, what does their last move actually look like it was for?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "judgment of a person / explanation",
+    "run the red hat analysis test"
+   ],
+   "produces": "a written red hat analysis finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The 'other view' is a costume on our own reasoning — a caricature assembled from our stereotypes rather than their record.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Adopt the adversary's or partner's worldview in first person: their history, fears, incentives and information.",
+    "From inside it, describe our plan as they will read it, not as we intend it.",
+    "Name the responses their worldview makes rational that ours calls irrational."
+   ]
+  },
+  {
+   "slug": "challenge.red-cell",
+   "name": "Red Cell analysis",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Central Intelligence Agency (Red Cell unit); Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "A small cell adopts the adversary's identity outright and plans as them — not attacking our plan from outside, but generating the move the adversary would actually make against it.",
+   "key_question": "If you were them, tasked with defeating this plan, what exactly would you do first?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attack this plan before reality does",
+    "a plan that has never been challenged",
+    "run the red cell analysis test"
+   ],
+   "produces": "a written red cell analysis finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Threat inflation: an imaginative cell invents a cleverer, more malign adversary than the evidence supports — the Team B failure in miniature.",
+   "time_cost": "medium",
+   "group": "group",
+   "steps": [
+    "Form the cell: a small group briefed only with what the adversary could plausibly know and do.",
+    "Have the cell plan against our proposal under the adversary's real constraints and permissions.",
+    "Take back the cell's most damaging feasible move and test the plan against it."
+   ]
+  },
+  {
+   "slug": "challenge.team-a-team-b",
+   "name": "Team A / Team B competitive analysis",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Central Intelligence Agency (Team B chaired by Richard Pipes)",
+    "work": "Team B competitive analysis exercise on Soviet strategic objectives",
+    "year": 1976,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "Two independent teams work the same evidence to rival conclusions and defend them against each other, so the disagreement itself — not one team's blind spots — becomes the product.",
+   "key_question": "Given exactly this evidence, what is the strongest opposite conclusion a competent team could reach and defend?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a consensus / claim",
+    "check this consensus / claim before relying on it",
+    "run the team a / team b competitive analysis test"
+   ],
+   "produces": "a written team a / team b competitive analysis finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "A stacked Team B: if the rival team is chosen for its conclusions, competitive analysis becomes theatre that manufactures the answer it was convened to find.",
+   "time_cost": "deep",
+   "group": "group",
+   "steps": [
+    "Brief two teams on the same evidence with opposite mandated conclusions.",
+    "Have each build its strongest case and then attack the other's reading of the shared evidence.",
+    "Judge which case survives contact with the other, and what evidence would settle it."
+   ]
+  },
+  {
+   "slug": "challenge.indicators-validator",
+   "name": "Indicators and signposts (Indicators Validator)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Converts each rival hypothesis into a list of observable indicators that should appear if it is true, then validates the list — would we actually see it, in time, and could it be faked?",
+   "key_question": "What specific, observable events would tell you this hypothesis is the one unfolding — and are you watching for them?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a plan / explanation",
+    "check this plan / explanation before relying on it",
+    "run the indicators and signposts test"
+   ],
+   "produces": "a written indicators and signposts (indicators validator) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The indicator list becomes self-confirming: analysts watch for what they listed, notice what they watch for, and read its appearance as proof.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "For each live hypothesis, list observable indicators that would appear if it were true.",
+    "Date and source each indicator in advance, so later sightings can be checked against the list.",
+    "Review on schedule: score which hypotheses the arriving indicators actually support."
+   ]
+  },
+  {
+   "slug": "challenge.what-if",
+   "name": "What If? Analysis",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Assumes the unlikely or dismissed event has already happened and works backwards to build the most plausible chain by which it occurred, attacking the reasoning that ruled it out.",
+   "key_question": "It happened. Now explain, step by step, how — and which of your 'that can't happen' arguments just failed?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a plan / decision",
+    "check this plan / decision before relying on it",
+    "run the what if? analysis test"
+   ],
+   "produces": "a written what if? analysis finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Unbounded speculation: with ingenuity any outcome can be back-chained, so the exercise proves everything is possible and prioritises nothing.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Take the outcome the plan assumes will not happen and stipulate it has happened.",
+    "Reconstruct, step by step, the most plausible path from today to that outcome.",
+    "Check the path for steps the current plan leaves wide open, and price closing them."
+   ]
+  },
+  {
+   "slug": "challenge.high-impact-low-probability",
+   "name": "High Impact / Low Probability Analysis",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Isolates the low-probability, high-impact branch a plan has quietly priced at zero and forces it to be argued on its merits — drivers, indicators, and consequences — rather than dismissed by its odds.",
+   "key_question": "Which outcome have you treated as negligible purely because it is unlikely, and what does the plan look like on the day it happens?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a plan / decision",
+    "check this plan / decision before relying on it",
+    "run the high impact / low probability analysis test"
+   ],
+   "produces": "a written high impact / low probability analysis finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Vividness capture: a well-told catastrophe starts to feel probable, and resources chase the dramatic tail while the mundane risks go unguarded.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Name the low-probability event whose impact would break the plan outright.",
+    "Test the probability honestly: is it low, or merely unexamined and uncomfortable?",
+    "Decide in advance what hedge, tripwire or exit the impact justifies, before it feels urgent."
+   ]
+  },
+  {
+   "slug": "challenge.outside-in",
+   "name": "Outside-In Thinking",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Deliberately starts from the broad external forces — demographic, technological, economic, cultural — that the inside view treats as fixed scenery, and asks which of them could overturn the argument from outside.",
+   "key_question": "What is changing out in the world, beyond this problem's usual frame, that could make the whole argument irrelevant?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a plan / consensus",
+    "check this plan / consensus before relying on it",
+    "run the outside-in thinking test"
+   ],
+   "produces": "a written outside-in thinking finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Trend soup: the external forces are so broad they can be enlisted to support any conclusion, and the analysis explains everything and predicts nothing.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List the external forces the plan does not control: markets, regulators, rivals, demography, technology.",
+    "For each, describe the plausible shift that would matter most to this plan.",
+    "Bring the two or three worst shifts back inside and re-run the plan against them."
+   ]
+  },
+  {
+   "slug": "challenge.multiple-scenarios",
+   "name": "Multiple Scenario Generation",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Builds several internally consistent futures from the key drivers and their uncertainties, then tests the claim or plan against all of them instead of the single expected future.",
+   "key_question": "In which of these futures does your argument stop working — and did you quietly plan for only one of them?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a plan / decision",
+    "check this plan / decision before relying on it",
+    "run the multiple scenario generation test"
+   ],
+   "produces": "a written multiple scenario generation finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The scenario set is reverse-engineered around the preferred future: one 'expected' scenario gets the detail, the rest get the labels.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Fix the focal question and the two uncertainties that matter most and are least predictable.",
+    "Build a small set of distinct scenarios from their combinations; give each a name and a logic.",
+    "Test the plan in every scenario; keep only what survives all of them or fails knowingly in one."
+   ]
+  },
+  {
+   "slug": "challenge.cross-impact-matrix",
+   "name": "Cross-Impact Matrix",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Theodore J. Gordon & Olaf Helmer",
+    "work": "Cross-impact analysis, RAND Corporation (codified in Heuer & Pherson, 2010)",
+    "year": 1966,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "Maps how the occurrence of each key event or trend raises or lowers the probability of every other, exposing combinations whose joint effect the argument never considered.",
+   "key_question": "Which two things in your argument are you treating as independent that would actually trigger — or cancel — each other?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a plan / explanation",
+    "check this plan / explanation before relying on it",
+    "run the cross-impact matrix test"
+   ],
+   "produces": "a written cross-impact matrix finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "False precision and combinatorial sprawl: dozens of gut-feel conditional probabilities produce an output that looks computed and is not.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "List the key events or trends bearing on the plan down one axis and across the other.",
+    "For each pair, judge how the first changes the second's likelihood or force.",
+    "Find the high-impact nodes: the few events whose movement moves everything else."
+   ]
+  },
+  {
+   "slug": "challenge.hypothesis-generation",
+   "name": "Hypothesis generation (Multiple Hypotheses Generator)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Forces the full set of rival explanations to be generated and written down before any testing begins, attacking Heuer's satisficing failure: seizing the first plausible story and only ever checking it.",
+   "key_question": "How many genuinely different explanations did you write down before you started deciding which one is right?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "which explanation actually fits",
+    "several stories could explain this",
+    "run the hypothesis generation test"
+   ],
+   "produces": "a written hypothesis generation (multiple hypotheses generator) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Padding: the list is filled out with straw rivals no one believes, so the favoured hypothesis 'wins' a rigged competition.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Before weighing evidence, generate the full set of plausible hypotheses, including the unwelcome ones.",
+    "Include at least one hypothesis in which we are being deceived, mistaken or played.",
+    "Only then move to weighing; a hypothesis never generated can never win."
+   ]
+  },
+  {
+   "slug": "challenge.diagnostic-reasoning",
+   "name": "Diagnostic reasoning (diagnosticity check)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Tests each piece of evidence for diagnosticity — whether it actually discriminates between the rival hypotheses — instead of letting evidence that is consistent with all of them pile up as 'support' for one.",
+   "key_question": "Which of your best evidence would look exactly the same if your main rival explanation were the true one?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a explanation / claim",
+    "check this explanation / claim before relying on it",
+    "run the diagnostic reasoning test"
+   ],
+   "produces": "a written diagnostic reasoning (diagnosticity check) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Diagnosticity is itself judged through the same biases, so evidence gets rated 'diagnostic' precisely when it flatters the favoured hypothesis.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "For each piece of evidence ask: which hypotheses does this actually separate?",
+    "Discard evidence that fits every hypothesis equally; it feels supportive and proves nothing.",
+    "Rank hypotheses by the diagnostic evidence against them, not by volume of support."
+   ],
+   "pairs_with": [
+    "challenge.ach"
+   ]
+  },
+  {
+   "slug": "challenge.deception-detection",
+   "name": "Deception Detection",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Asks systematically whether the evidence itself may be planted: does the source have motive, opportunity and means to deceive, does the material fit their past pattern, and is it suspiciously exactly what they would want us to believe?",
+   "key_question": "If someone wanted you to reach exactly this conclusion, is this precisely the evidence they would feed you?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a claim / judgment of a person",
+    "check this claim / judgment of a person before relying on it",
+    "run the deception detection test"
+   ],
+   "produces": "a written deception detection finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Paranoia spiral: deception is unfalsifiable once entertained — every denial becomes confirmation — and the base rate (most sources are not running a deception operation) is forgotten.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Ask who gains if we believe this, and what it would cost them to fake the evidence we have.",
+    "Look for the classic tells: evidence that is too complete, too convenient, or volunteered too early.",
+    "Seek one channel the suspected deceiver does not control, and check the story there."
+   ]
+  },
+  {
+   "slug": "challenge.chronologies-timelines",
+   "name": "Chronologies and Timelines",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Lays every dated event in the story on one timeline to attack the narrative's hidden errors: reversed sequence, impossible timing, missing intervals, and causes that postdate their effects.",
+   "key_question": "Put every event on one timeline — does the cause still come before the effect, and what falls in the gaps?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "which explanation actually fits",
+    "several stories could explain this",
+    "run the chronologies and timelines test"
+   ],
+   "produces": "a written chronologies and timelines finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Sequence is mistaken for causation: a clean timeline makes post hoc reasoning feel proven rather than merely possible.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Lay the known events on one dated line, with sources for each date.",
+    "Look for gaps, impossible sequences and events that only make sense in a different order.",
+    "Rebuild the causal story so it fits the timeline, not the other way round."
+   ]
+  },
+  {
+   "slug": "challenge.structured-analogies",
+   "name": "Structured Analogies",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Takes the historical analogy an argument leans on ('this is Munich, 1938') and scores it dimension by dimension — similarities, differences, and whether the differences are the load-bearing ones.",
+   "key_question": "Your analogy matches on the surface — where does it differ, and is the difference exactly the part your conclusion depends on?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a explanation / claim",
+    "check this explanation / claim before relying on it",
+    "run the structured analogies test"
+   ],
+   "produces": "a written structured analogies finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Analogy shopping continues one level down: dimensions are chosen and weighted so the favoured comparison survives its own audit.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "State the present case and the historical analogy being claimed for it, side by side.",
+    "List the likenesses, then the differences, then what is simply unknown about both cases.",
+    "Judge the analogy by its differences: if they touch the mechanism that produced the old outcome, the analogy fails."
+   ]
+  },
+  {
+   "slug": "challenge.misperception-audit",
+   "name": "Misperception audit (Jervis)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Robert Jervis",
+    "work": "Perception and Misperception in International Politics",
+    "year": 1976,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Applies Jervis's documented patterns of misperception — actors see the other side's behaviour as more centralised, deliberate and hostile than it is, assimilate new information to existing beliefs, and overestimate how much others attend to them — as a checklist against a.",
+   "key_question": "How much of their 'strategy' is your inference — and how much is their improvisation, accident and internal chaos that you have tidied into a plan?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "judgment of a person / explanation",
+    "run the misperception audit test"
+   ],
+   "produces": "a written misperception audit (jervis) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Everything becomes misperception: genuine conflicts of interest and real hostile intent get explained away as mutual misunderstanding.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List what we believe the other side intends, and the images we hold of them: enemy, victim, incompetent, monolith.",
+    "Check each image against Jervis's traps: over-attributing their acts to intent, under-weighting circumstance, assuming they see us as we see ourselves.",
+    "Name the one perception most likely to be wrong and what it is costing."
+   ],
+   "pairs_with": [
+    "challenge.red-hat",
+    "challenge.mirror-imaging"
+   ]
+  },
+  {
+   "slug": "challenge.hedgehog-audit",
+   "name": "Hedgehog audit (Tetlock)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Philip E. Tetlock",
+    "work": "Expert Political Judgment: How Good Is It? How Can We Know?",
+    "year": 2005,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Tests an expert claim against Tetlock's twenty-year tournament finding: forecasters who organise everything around one big idea (hedgehogs) perform worse than chance-adjacent dart-throwing, while many-small-ideas foxes do measurably better — so the audit asks how much of the.",
+   "key_question": "If your one big idea were removed, how much of this argument would still be standing?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a claim / consensus",
+    "check this claim / consensus before relying on it",
+    "run the hedgehog audit test"
+   ],
+   "produces": "a written hedgehog audit (tetlock) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Performed foxiness: the arguer fragments into many shallow takes and hedges everything, which reads as open-mindedness and commits to nothing testable.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Ask whether the judgment comes from one big idea applied to everything, or from many small updates.",
+    "Check the forecaster's record: confidence level against hit rate, and whether misses changed the view.",
+    "Discount hedgehog certainty in proportion to its past misses; weight fox-style updating."
+   ]
+  },
+  {
+   "slug": "challenge.structured-self-critique",
+   "name": "Structured Self-Critique",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Before anyone else attacks, the author runs their own finished argument against a fixed checklist — evidence gaps, untested assumptions, alternative explanations, source weaknesses — and must record what the critique changed.",
+   "key_question": "What are the three weakest points of our own case, stated as our critics would state them?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "is this claim credible",
+    "someone is asserting this as established fact",
+    "run the structured self-critique test"
+   ],
+   "produces": "a written structured self-critique finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Ritual self-flagellation: minor stylistic concessions are confessed loudly so the substantive weaknesses never have to be.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Before attacking the other side, write our own case's three weakest points in their words.",
+    "Name the evidence we have been avoiding and the assumption we least want examined.",
+    "Only then proceed to the attack, carrying the self-critique into the survival score."
+   ]
+  },
+  {
+   "slug": "challenge.adversarial-collaboration",
+   "name": "Adversarial Collaboration",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
+    "work": "Structured Analytic Techniques for Intelligence Analysis",
+    "year": 2010,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Opposing camps stop debating conclusions and jointly design, in advance, the test or evidence-gathering both agree would discriminate between their positions — then abide by the result.",
+   "key_question": "What single test would both sides accept, agreed before it is run, as evidence against their own position?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "attacking a consensus / claim",
+    "check this consensus / claim before relying on it",
+    "run the adversarial collaboration test"
+   ],
+   "produces": "a written adversarial collaboration finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Collaboration in name only: the parties cannot agree on a fair test, or quietly reserve the right to dispute the result once it lands against them.",
+   "time_cost": "deep",
+   "group": "group",
+   "steps": [
+    "Get the two camps to agree, in advance and in writing, on a test both accept as fair.",
+    "Run the test jointly, with both sides able to inspect the data and the method.",
+    "Publish the result to both camps at once; the pre-agreement is what makes it binding."
+   ]
+  },
+  {
+   "slug": "challenge.noise-audit",
+   "name": "Noise audit",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Daniel Kahneman, Olivier Sibony & Cass R. Sunstein",
+    "work": "Noise: A Flaw in Human Judgment",
+    "year": 2021,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Daniel Kahneman, Olivier Sibony & Cass R. Sunstein, 2021); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Before debating whether a judgment is biased, measure how much identical cases scatter when judged independently — variability is error even when the average looks right.",
+   "key_question": "If this same case were judged again, by another competent person or by us on another day, how different would the answer be?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "any recurring or high-stakes judgment — estimates, scores, approvals",
+    "run the noise audit test"
+   ],
+   "produces": "a written noise audit finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The audit needs genuinely independent duplicate judgments; if judges confer first, the scatter hides and the audit reports false calm.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Give the same case, stripped of names and outcomes, to several judges or occasions independently.",
+    "Measure the spread of their judgments; that spread is the noise, before anyone argues about bias.",
+    "Where the spread is wide, the single judgment in front of you deserves a wide discount."
+   ],
+   "pairs_with": [
+    "challenge.mediating-assessments-protocol",
+    "mm.bias-blind-spot"
+   ]
+  },
+  {
+   "slug": "challenge.mediating-assessments-protocol",
+   "name": "Mediating Assessments Protocol (MAP)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Daniel Kahneman, Dan Lovallo & Olivier Sibony",
+    "work": "A Structured Approach to Strategic Decisions (MIT Sloan Management Review); Noise",
+    "year": 2019,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Daniel Kahneman, Dan Lovallo & Olivier Sibony, 2019); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Break one big holistic judgment into a fixed list of independent sub-judgments, score each on evidence before any overall verdict, and let intuition speak only at the end.",
+   "key_question": "What are the separable dimensions of this decision, and have we scored each one before letting a global impression form?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a plan, hire, investment or proposal being approved on one gestalt",
+    "run the mediating assessments protocol test"
+   ],
+   "produces": "a written mediating assessments protocol (map) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "If the dimensions are chosen after seeing the preferred answer, the structure just launders the original intuition into numbers.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Break the judgment into a small set of independent mediating assessments, each observable on its own scale.",
+    "Score each assessment separately, without knowing the overall verdict anyone wants.",
+    "Combine the scores by the agreed rule, not by a final holistic impression."
+   ]
+  },
+  {
+   "slug": "challenge.reference-class-forecasting",
+   "name": "Reference class forecasting (outside view)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Bent Flyvbjerg, building on Daniel Kahneman & Dan Lovallo",
+    "work": "From Nobel Prize to Project Management: Getting Risks Right (Project Management Journal); Timid Choices and Bold Forecasts (1993)",
+    "year": 2006,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Bent Flyvbjerg, building on Daniel Kahneman & Dan Lovallo, 2006); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Forecast from the outcome distribution of a class of comparable past cases instead of from the details of this plan, then adjust only for differences you can defend.",
+   "key_question": "What happened the last ten times someone tried something like this — and where does this case really sit in that distribution?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "any cost, schedule, adoption or success forecast built from the inside view",
+    "run the reference class forecasting test"
+   ],
+   "produces": "a written reference class forecasting (outside view) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "A cherry-picked or non-comparable reference class gives a precise-looking answer that is worse than the intuition it replaced.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Name the reference class: past cases genuinely like this one, in outcome terms.",
+    "Take the class's base distribution: typical cost, time and failure rate, ignoring this case's special story.",
+    "Adjust from the base rate only for proven, specific differences, and say by how much."
+   ],
+   "pairs_with": [
+    "mm.planning-fallacy",
+    "challenge.calibration-scoring"
+   ]
+  },
+  {
+   "slug": "challenge.calibration-scoring",
+   "name": "Calibration training and Brier scoring",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Glenn W. Brier; Sarah Lichtenstein & Baruch Fischhoff",
+    "work": "Verification of Forecasts Expressed in Terms of Probability (1950); Training for Calibration (1980)",
+    "year": 1950,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Glenn W. Brier; Sarah Lichtenstein & Baruch Fischhoff, 1950); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Force forecasts into explicit probabilities, score them against outcomes with a proper scoring rule such as Brier's, and feed the scores back — the one debiasing method with repeated evidence that it works.",
+   "key_question": "Where is the scored track record behind this confidence — what were the last twenty predictions, and what is their Brier score?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a forecaster, expert or team whose judgment will be relied on again, or a",
+    "run the calibration training and brier scoring test"
+   ],
+   "produces": "a written calibration training and brier scoring finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Scoring only memorable predictions, or scoring outcomes instead of probabilities, recreates the hindsight story the method exists to break.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Force the forecast into a number or range with a date on it.",
+    "When the date passes, score it: Brier score for probabilities, hit-or-miss for ranges.",
+    "Show the forecaster their own track record before their next confident number is used."
+   ]
+  },
+  {
+   "slug": "challenge.superforecasting-practices",
+   "name": "Superforecasting practices (fox-style aggregation)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Philip E. Tetlock & Dan Gardner",
+    "work": "Superforecasting: The Art and Science of Prediction (building on Expert Political Judgment, 2005)",
+    "year": 2015,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Philip E. Tetlock & Dan Gardner, 2015); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Beyond updating: use granular probabilities instead of verbal ones, break questions into parts, aggregate many small models fox-style rather than betting on one big theory, and forecast in teams that trade arguments.",
+   "key_question": "Is this forecast one hedgehog story at a round-number probability, or an aggregation of separable sub-questions with granular odds?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a strategic forecast, market call or scenario judgment offered as a single",
+    "run the superforecasting practices test"
+   ],
+   "produces": "a written superforecasting practices (fox-style aggregation) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Borrowing the vocabulary ('70% confident') without the scored feedback loop produces false precision with none of the accuracy.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Break the question into a Fermi-style chain of smaller, checkable parts.",
+    "Start from the outside view, then update in small steps as specific evidence arrives.",
+    "Keep score, seek the strongest opposing read, and revise visibly rather than defending the first call."
+   ]
+  },
+  {
+   "slug": "challenge.accountability-protocol",
+   "name": "Pre-decisional accountability",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Jennifer S. Lerner & Philip E. Tetlock",
+    "work": "Accounting for the Effects of Accountability (Psychological Bulletin)",
+    "year": 1999,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Jennifer S. Lerner & Philip E. Tetlock, 1999); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Accountability improves thinking only in one configuration: imposed before the decision, to an audience whose views are unknown, who cares about process and accuracy — every other configuration entrenches or panders.",
+   "key_question": "Who will this decision-maker have to justify the reasoning to, when were they told, and do they already know what that audience wants to hear?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a review, sign-off or challenge process that assumes being watched will",
+    "run the pre-decisional accountability test"
+   ],
+   "produces": "a written pre-decisional accountability finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Post-decision accountability to a known audience produces defensive bolstering and the acceptability heuristic — the appearance of scrutiny with the opposite effect.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Ask: will the decider have to explain this judgment, in advance of knowing the outcome, to someone whose views they do not know?",
+    "If not, create that condition: a written rationale reviewed by a named sceptic.",
+    "Expect and demand narrower confidence once the explanation is owed."
+   ]
+  },
+  {
+   "slug": "challenge.decision-journal",
+   "name": "Decision journal",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Annie Duke (populariser; no single inventor — see verification notes)",
+    "work": "Thinking in Bets",
+    "year": 2018,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Record the decision, the reasoning, the alternatives and the explicit odds at the moment of deciding, so the later review compares the outcome against what was actually believed, not what is now remembered.",
+   "key_question": "Where is the contemporaneous record of what we expected and why — or are we about to review this decision from memory?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "any consequential decision that will later be evaluated, learned from or",
+    "run the decision journal test"
+   ],
+   "produces": "a written decision journal finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Entries written vaguely ('good prospects, manageable risks') cannot be scored later, so the journal becomes a ritual that protects hindsight instead of defeating it.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "At decision time, record the options, the choice, the reasons, the odds, and how you feel.",
+    "Seal the entry; do not edit it after the outcome is known.",
+    "Review on a fixed date: judge the reasoning against what was knowable then, not the result."
+   ]
+  },
+  {
+   "slug": "challenge.checklist",
+   "name": "Checklist",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Atul Gawande",
+    "work": "The Checklist Manifesto",
+    "year": 2009,
+    "type": "practitioner"
+   },
+   "evidence_note": "Documented in the research literature (Atul Gawande, 2009); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "For known, repeatable failure points, a short explicit checklist catches the errors that expertise and intelligence reliably skip under load.",
+   "key_question": "Which steps of this review are we relying on memory and professionalism for, when they could be written down and ticked off?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a repeated review, launch, sign-off or due-diligence process with a history",
+    "run the checklist test"
+   ],
+   "produces": "a written checklist finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "A checklist that grows into a compliance document gets pencil-whipped; the evidence supports short lists of killer items, not exhaustive ones.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write the five to nine checks that catch this decision type's known killers, in the order they must be verified.",
+    "Run the list aloud or in writing at the pause point before commitment, not from memory.",
+    "Any failed check stops the line until it is answered with evidence, not reassurance."
+   ]
+  },
+  {
+   "slug": "challenge.data-frame-audit",
+   "name": "Data/frame audit",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Gary Klein, Brian Moon & Robert R. Hoffman",
+    "work": "Making Sense of Sensemaking 1 & 2 (IEEE Intelligent Systems)",
+    "year": 2006,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Sensemaking runs in a loop where the current frame decides what counts as data and the data revise the frame — so audit the frame itself: what it makes visible, what it files as noise, and what anomaly would force a reframe.",
+   "key_question": "What frame is organising this evidence, what is it treating as irrelevant, and what observation would the frame be unable to explain?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "an expert interpretation, diagnosis or intelligence-style assessment that",
+    "run the data/frame audit test"
+   ],
+   "produces": "a written data/frame audit finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Frames are self-sealing: discordant data gets elaborated away inside the frame, so the audit must name the reframing trigger in advance.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Ask what the data in front of you excludes: who is missing, what period, what was never measured.",
+    "Restate the finding under the opposite framing: losses as gains, survival as mortality, relative as absolute.",
+    "Check whether the conclusion survives both framings and the missing-data question."
+   ]
+  },
+  {
+   "slug": "challenge.fermi-estimation",
+   "name": "Fermi estimation",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Enrico Fermi",
+    "work": "Fermi problems — the estimation practice named for his 1945 Trinity-yield estimate",
+    "year": 1945,
+    "type": "tradition"
+   },
+   "source_verified": true,
+   "summary": "Decompose a claimed quantity into a chain of estimable factors and multiply: a ten-minute order-of-magnitude check that kills a surprising share of impressive numbers.",
+   "key_question": "Can this number be rebuilt from its components in ten minutes — and which single factor carries the whole claim?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a market size, saving, projection or statistic quoted without its",
+    "run the fermi estimation test"
+   ],
+   "produces": "a written fermi estimation finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Garbage factors multiplied together give garbage with extra confidence; the method tests plausibility, not precision.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Break the claimed number into factors you can estimate from everyday magnitudes.",
+    "Estimate each factor to an order of magnitude, multiplying through without a calculator's false precision.",
+    "If the claim sits more than tenfold from the Fermi product, the claim carries the burden of explanation."
+   ]
+  },
+  {
+   "slug": "challenge.ergodicity-audit",
+   "name": "Ergodicity check (time average vs ensemble average)",
+   "kind": "model",
+   "mode": "constraint",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Ole Peters",
+    "work": "The ergodicity problem in economics, Nature Physics",
+    "year": 2019,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Expected value is an average across parallel cases; a single life, firm or fund lives one trajectory, and for multiplicative outcomes the time average can be negative while the expected value is positive.",
+   "key_question": "Is this outcome multiplicative with an absorbing state (ruin), so that the average case is one nobody actually experiences?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "any argument built on expected value, average returns or base rates applied",
+    "run the ergodicity check test"
+   ],
+   "produces": "a written ergodicity check (time average vs ensemble average) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Misapplied to one-off additive outcomes, where the ensemble average is the right guide and the audit only adds caution.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.kelly-sizing",
+    "challenge.margin-of-safety"
+   ]
+  },
+  {
+   "slug": "challenge.robustness-stress-test",
+   "name": "Robust decision making",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Robert J. Lempert, Steven W. Popper & Steven C. Bankes (RAND)",
+    "work": "Shaping the Next One Hundred Years",
+    "year": 2003,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "Instead of optimising for the best-estimate future, stress-test each option across hundreds of plausible futures, find the cluster of futures where it fails, and prefer the option that performs acceptably across the widest range.",
+   "key_question": "In which plausible futures does this plan fail, and can it be hedged or adapted so it survives them?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "long-horizon plans where the parties cannot agree on probabilities or even",
+    "run the robust decision making test"
+   ],
+   "produces": "a written robust decision making finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Needs a model and computing effort; run verbally it degenerates into ordinary scenario brainstorming and loses its bite.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "List the futures the plan must not fail in, including the unkind ones, not just the forecast.",
+    "Test the plan's performance in each future; mark where it breaks rather than where it shines.",
+    "Prefer the option that stays acceptable across the set over the one that is optimal in one future."
+   ]
+  },
+  {
+   "slug": "challenge.scenario-planning",
+   "name": "Scenario planning",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Pierre Wack",
+    "work": "Scenarios: Uncharted Waters Ahead, Harvard Business Review",
+    "year": 1985,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Build a small set of internally consistent, genuinely different futures from predetermined elements and driving uncertainties, then test whether the plan survives all of them rather than betting on one forecast.",
+   "key_question": "Which two uncertainties, resolved either way, would break this plan — and does it still work in the worst combination?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "strategy arguments that smuggle in a single assumed future (growth",
+    "run the scenario planning test"
+   ],
+   "produces": "a written scenario planning finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Scenarios become three versions of the same forecast (good/base/bad), or vivid stories that entertain and change nothing.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Name the driving forces acting on this decision and separate the predetermined from the truly uncertain.",
+    "Build two to four scenarios from the critical uncertainties; write each as a short story with a name.",
+    "Stress the plan inside each story and keep the moves that help in several stories at once."
+   ]
+  },
+  {
+   "slug": "challenge.minimax-regret",
+   "name": "Minimax regret",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Leonard J. Savage",
+    "work": "The Theory of Statistical Decision, Journal of the American Statistical Association",
+    "year": 1951,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "For each option and each state of the world, compute the regret — the gap between its result and the best result available in that state — and choose the option whose worst regret is smallest.",
+   "key_question": "If each future happens, how badly does this choice compare with the best choice for that future — and which option keeps the worst gap smallest?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "one-shot decisions with no defensible probabilities, where missing out is",
+    "run the minimax regret test"
+   ],
+   "produces": "a written minimax regret finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Sensitive to the option set: adding an irrelevant alternative can flip the ranking, and it can be over-conservative when one state is wildly unlikely.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List the states of the world that matter and the regret each option would carry in each state: how far from the best choice for that state.",
+    "Find each option's worst regret across states.",
+    "Prefer the option whose worst regret you can actually live with."
+   ]
+  },
+  {
+   "slug": "challenge.maximin-worst-case",
+   "name": "Maximin (Wald criterion)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Abraham Wald",
+    "work": "Statistical Decision Functions",
+    "year": 1950,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Ignore probabilities entirely and choose the option whose worst possible outcome is least bad — the guaranteed-outcome principle.",
+   "key_question": "What is the worst outcome this option can produce, and can we actually survive it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "survival-critical choices where a single bad outcome ends the game and",
+    "run the maximin test"
+   ],
+   "produces": "a written maximin (wald criterion) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Paralysing pessimism: it ignores how unlikely the worst case is and how much upside is surrendered to avoid it.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "For each option, identify its worst plausible outcome, honestly stated.",
+    "Compare options by those worst cases, not by their expected or hoped cases.",
+    "If the leading option's worst case is ruinous and another's is merely bad, the ranking flips."
+   ]
+  },
+  {
+   "slug": "challenge.reversibility-check",
+   "name": "Reversibility and regret minimisation",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Jeff Bezos",
+    "work": "Amazon letters to shareholders (regret minimisation 1997; two-way doors 2015)",
+    "year": 1997,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Classify the decision: two-way doors (reversible) should be made fast with light process; one-way doors (irreversible) deserve the full red team — and for the big ones, choose the option your 80-year-old self would least regret not trying.",
+   "key_question": "Is this decision reversible, and if not, what will I regret more at 80 — having tried it or having passed?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "process arguments: how much analysis, delay and consensus a decision is",
+    "run the reversibility and regret minimisation test"
+   ],
+   "produces": "a written reversibility and regret minimisation finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Reversibility is often fake — the door closes behind you through reputation, contracts or other people's commitments — and the regret frame can romanticise risk.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Classify the decision: how much time, money and reputation does undoing it cost?",
+    "For hard-to-reverse calls, raise the evidence bar and slow the clock deliberately.",
+    "For easily reversed calls, flag any process heavier than the decision deserves."
+   ]
+  },
+  {
+   "slug": "challenge.cynefin-triage",
+   "name": "Cynefin triage",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Dave Snowden & Mary E. Boone",
+    "work": "A Leader's Framework for Decision Making, Harvard Business Review",
+    "year": 2007,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Sort the situation before solving it: clear (apply best practice), complicated (analyse), complex (probe, sense, respond — no analysis settles it in advance), chaotic (act first).",
+   "key_question": "Is this actually a complicated problem that analysis can settle, or a complex one where the plan is a hypothesis to probe, not a conclusion?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "plans that import complicated-domain tools (forecasts, expert panels",
+    "run the cynefin triage test"
+   ],
+   "produces": "a written cynefin triage finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Becomes a labelling exercise; the domains are easy to claim and hard to verify, and 'complex' can be used as an excuse to skip analysis that would have worked.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Place the problem: clear, complicated, complex, or chaotic, by whether cause and effect are knowable in advance.",
+    "If it is complex, analysis and precedent lose force; demand probes and safe-to-fail tests instead of a master plan.",
+    "Attack any plan that treats a complex problem as merely complicated."
+   ]
+  },
+  {
+   "slug": "challenge.expected-value-trees",
+   "name": "Expected value and decision trees",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Howard Raiffa",
+    "work": "Decision Analysis",
+    "year": 1968,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Lay the choice out as a tree — decisions, chance nodes with explicit probabilities, outcomes with explicit values — and fold it back to find which branch actually carries the recommendation.",
+   "key_question": "Show me the tree: which single probability or value, if wrong, flips the recommended branch?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "quantitative business cases and any argument whose conclusion depends on",
+    "run the expected value and decision trees test"
+   ],
+   "produces": "a written expected value and decision trees finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "False precision: the tree looks rigorous while its probabilities are invented, and it silently assumes the ensemble average is the right target (see ergodicity).",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Draw the tree: options, chance branches, outcomes, each with a probability and a value.",
+    "Multiply through and compare expected values; check which single probability the ranking hangs on.",
+    "If that probability is a guess wearing a suit, say so and re-run with its honest range."
+   ]
+  },
+  {
+   "slug": "challenge.bayesian-decision",
+   "name": "Bayesian decision theory",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Leonard J. Savage",
+    "work": "The Foundations of Statistics",
+    "year": 1954,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "State a prior, update it by the likelihood of the evidence under each hypothesis, and choose the act with the highest expected utility under the posterior — making the prior itself an auditable object.",
+   "key_question": "What was your prior before this evidence arrived, and how much should this evidence actually move it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "arguments where one striking study, anecdote or data point is doing the",
+    "run the bayesian decision theory test"
+   ],
+   "produces": "a written bayesian decision theory finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Priors can be laundered — chosen after the fact to reach the wanted posterior — and precise updating on garbage likelihoods is still garbage.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Combine the updated probabilities with the payoffs of being wrong each way.",
+    "Choose the act with the best expected outcome under the updated beliefs, not the most likely story.",
+    "Name the evidence that would flip the chosen act, and what it would cost to wait for it."
+   ]
+  },
+  {
+   "slug": "challenge.value-of-information",
+   "name": "Value of information",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Ronald A. Howard",
+    "work": "Information Value Theory, IEEE Transactions on Systems Science and Cybernetics",
+    "year": 1966,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Information is worth paying for only if it could change the decision; the value of resolving an uncertainty is bounded by how much the choice would improve, and is zero for uncertainties the decision does not turn on.",
+   "key_question": "What would you do differently for each possible answer — and if the answer changes nothing, why are we waiting for it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "plans stalled on more research, more data or another expert, and research",
+    "run the value of information test"
+   ],
+   "produces": "a written value of information finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Requires a rough decision model to compute; used loosely it becomes a slogan for skipping diligence that was actually cheap and decisive.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Ask what decision the new information could actually change; if none, its value here is zero.",
+    "Estimate the cost of a wrong call against the cost and delay of the information.",
+    "Buy information only up to the point where it can still change the act."
+   ]
+  },
+  {
+   "slug": "challenge.pareto-frontier",
+   "name": "Pareto trade-off analysis",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Vilfredo Pareto",
+    "work": "Manual of Political Economy",
+    "year": 1906,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "An option is dominated if another option is at least as good on every criterion and better on one; the surviving set (the Pareto frontier) is where the real argument — the trade-off — lives.",
+   "key_question": "Is this option dominated — beaten or matched on every criterion by another option — and if it is on the frontier, which criterion are we knowingly sacrificing?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "multi-option comparisons where a favoured option is praised criterion by",
+    "run the pareto trade-off analysis test"
+   ],
+   "produces": "a written pareto trade-off analysis finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Almost everything survives on a frontier once enough criteria are listed; criteria proliferation can protect a weak favourite.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Plot the live options on the two or three criteria that matter.",
+    "Strike every option that another option beats on all criteria at once: the dominated set.",
+    "Force the argument onto the frontier, where the trade-off is real and must be owned."
+   ]
+  },
+  {
+   "slug": "challenge.satisficing",
+   "name": "Satisficing and bounded rationality",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Herbert A. Simon",
+    "work": "Rational Choice and the Structure of Environments, Psychological Review",
+    "year": 1956,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Real deciders search until an option clears an aspiration level, then stop; the quality of a decision process is set by the aspiration level and the search order, not by exhaustive optimisation.",
+   "key_question": "What aspiration level is this search actually using, and is the first acceptable option being mistaken for the best one?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "plans that assume exhaustive comparison (of candidates, vendors",
+    "run the satisficing and bounded rationality test"
+   ],
+   "produces": "a written satisficing and bounded rationality finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Becomes an excuse for lazy search: a low aspiration level dressed up as cognitive realism.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.fast-and-frugal",
+   "name": "Fast-and-frugal heuristics (ecological rationality)",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Gerd Gigerenzer, Peter M. Todd & the ABC Research Group",
+    "work": "Simple Heuristics That Make Us Smart",
+    "year": 1999,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Gerd Gigerenzer, Peter M. Todd & the ABC Research Group, 1999); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Simple rules that use few cues (take-the-best, recognition, tallying) can match or beat complex models in the environments they fit; a heuristic is rational relative to its environment, not in the abstract.",
+   "key_question": "In this environment, does the elaborate model actually beat the one-cue rule — and what evidence says so?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "over-engineered scoring models and forecasts in noisy environments, and",
+    "run the fast-and-frugal heuristics test"
+   ],
+   "produces": "a written fast-and-frugal heuristics (ecological rationality) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Environment fit is easy to assert after the fact; a heuristic that won in one ecology gets exported to one where its cue is noise.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.recognition-primed",
+   "name": "Recognition-primed decision model",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Gary Klein",
+    "work": "Sources of Power",
+    "year": 1998,
+    "type": "practitioner"
+   },
+   "evidence_note": "Documented in the research literature (Gary Klein, 1998); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Experienced deciders under pressure do not compare options; they recognise the situation as a type, retrieve one workable course of action, and mentally simulate it — comparing only if the simulation fails.",
+   "key_question": "Has the decider actually seen this situation before — and does the first retrieved option survive a mental simulation of its failure?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "plans that assume a comparison process in settings (crises, operations",
+    "run the recognition-primed decision model test"
+   ],
+   "produces": "a written recognition-primed decision model finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Recognition is only as good as the experience behind it; in novel situations it retrieves a confident, wrong pattern.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.kelly-sizing",
+   "name": "Kelly criterion (bet sizing)",
+   "kind": "method",
+   "mode": "constraint",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "John L. Kelly Jr.",
+    "work": "A New Interpretation of Information Rate, Bell System Technical Journal",
+    "year": 1956,
+    "type": "industry"
+   },
+   "source_verified": true,
+   "summary": "For a favourable repeated bet there is an optimal fraction of capital to stake — maximising long-run growth — and betting above it destroys growth even with a real edge; practitioners use fractional Kelly because the inputs are estimates.",
+   "key_question": "Given your actual edge and odds, what fraction does Kelly allow — and how far above it is this commitment?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "position sizes, budget allocations, and any 'high conviction' argument",
+    "run the kelly criterion test"
+   ],
+   "produces": "a written kelly criterion (bet sizing) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Kelly assumes known probabilities; fed estimated probabilities it over-bets, which is why full Kelly on real-world estimates is itself a failure mode.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "From the estimated edge and odds, compute the full Kelly fraction, then take half or less of it.",
+    "Check the stake actually proposed against that fraction; flag anything above full Kelly as growth-destroying.",
+    "Re-run with the honest, wider uncertainty: sizing shrinks fast when the edge is a guess."
+   ]
+  },
+  {
+   "slug": "challenge.margin-of-safety",
+   "name": "Margin of safety",
+   "kind": "principle",
+   "mode": "constraint",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Benjamin Graham",
+    "work": "The Intelligent Investor",
+    "year": 1949,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Because estimates are wrong and the future is uncooperative, only act when the case survives a substantial cushion of error — the gap between price (or commitment) and conservatively estimated value is the protection.",
+   "key_question": "How wrong can the central estimate be before this stops working — and is that cushion bigger than our demonstrated ability to estimate?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "investments, hires, timelines and capacity plans built on a point estimate",
+    "run the margin of safety test"
+   ],
+   "produces": "a written margin of safety finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The cushion is set by feel and quietly shrinks under enthusiasm; a margin computed from the same wrong model protects nothing.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.optionality-barbell",
+   "name": "Optionality, via negativa and the barbell",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Nassim Nicholas Taleb",
+    "work": "Antifragile",
+    "year": 2012,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Prefer structures with capped downside and open upside (optionality), improve by removing what harms rather than adding what might help (via negativa), and split exposure between the very safe and the speculative instead of the fragile middle (barbell).",
+   "key_question": "Is the downside capped and the upside open — or is this the fragile middle: large if it works, fatal if it doesn't, and dependent on a forecast?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "career moves, portfolios, product bets and any plan whose payoff shape has",
+    "run the optionality, via negativa and the barbell test"
+   ],
+   "produces": "a written optionality, via negativa and the barbell finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "'Optionality' becomes a licence to never commit, and barbell labels get pasted onto ordinary diversification.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.skin-in-the-game",
+   "name": "Skin in the game (symmetry audit)",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Nassim Nicholas Taleb",
+    "work": "Skin in the Game",
+    "year": 2018,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Advice and recommendations are a different object when the recommender shares the downside; hidden asymmetries — upside for the adviser, ruin for the advised — are a reliable predictor of bad counsel.",
+   "key_question": "What does the person recommending this lose if it fails — and if the answer is nothing, why is their confidence evidence?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "consultants, sellers, forecasters, fund managers and any expert whose",
+    "run the skin in the game test"
+   ],
+   "produces": "a written skin in the game (symmetry audit) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Skin in the game is not sufficient for competence — plenty of true believers lose their own money sincerely — and it can be faked with token exposure.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.adler-teleology",
+    "mm.bias-from-incentives"
+   ]
+  },
+  {
+   "slug": "challenge.goodhart-audit",
+   "name": "Goodhart's law",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Charles Goodhart",
+    "work": "Problems of Monetary Management: The U.K. Experience",
+    "year": 1975,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Any observed statistical regularity tends to collapse once pressure is placed on it for control: a measure turned into a target stops measuring what it measured.",
+   "key_question": "Once people know this metric is the target, how will they move the number without moving the thing it was proxying?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "kPI-driven plans, targets, league tables, and any argument of the form 'we",
+    "run the goodhart's law test"
+   ],
+   "produces": "a written goodhart's law finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Over-applied, it vetoes measurement itself; some metrics are hard to game and the law names a pressure, not a certainty.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.campbell-audit",
+    "challenge.cobra-effect"
+   ]
+  },
+  {
+   "slug": "challenge.campbell-audit",
+   "name": "Campbell's law",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Donald T. Campbell",
+    "work": "Assessing the Impact of Planned Social Change",
+    "year": 1979,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Donald T. Campbell, 1979); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "The more a quantitative indicator is used for decision making, the more it is subject to corruption pressures and the more it corrupts the process it was meant to monitor.",
+   "key_question": "What decision rides on this indicator — and at that stake level, who is already under pressure to distort the indicator or the process behind it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "high-stakes testing, rankings, performance regimes and social programmes",
+    "run the campbell's law test"
+   ],
+   "produces": "a written campbell's law finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "Like Goodhart's, it can become a universal solvent that dissolves legitimate evaluation; it predicts pressure, not proof of corruption in a given case.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.goodhart-audit"
+   ]
+  },
+  {
+   "slug": "challenge.cobra-effect",
+   "name": "Cobra effect (perverse incentive)",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Horst Siebert",
+    "work": "Der Kobra-Effekt",
+    "year": 2001,
+    "type": "practitioner",
+    "note": "Siebert (2001) coined the term; the Delhi cobra anecdote itself is folklore."
+   },
+   "source_verified": true,
+   "summary": "A reward offered to reduce a problem can pay people to produce more of it — the bounty breeds the cobras. (The term is verified; the colonial Delhi anecdote behind it is unverified folklore — see notes.)",
+   "key_question": "Could a rational person profit by manufacturing the problem this scheme pays to eliminate?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "bounties, subsidies, buybacks, quotas and any scheme that pays per unit of",
+    "run the cobra effect test"
+   ],
+   "produces": "a written cobra effect (perverse incentive) finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The naming anecdote is folklore, and the label gets slapped on any unintended consequence; the audit only bites where a per-unit payment meets a producible problem.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.opportunity-cost",
+   "name": "Opportunity cost",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Friedrich von Wieser",
+    "work": "Der natürliche Werth (Natural Value)",
+    "year": 1889,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "The true cost of any choice is the best alternative it forecloses; an option that beats doing nothing can still lose to the option it displaces. (Standard attribution of the term to von Wieser.)",
+   "key_question": "Compared with what? What is the best alternative this commits us against, and does the favourite beat that — or only beat zero?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "business cases benchmarked against 'do nothing', time commitments, and any",
+    "run the opportunity cost test"
+   ],
+   "produces": "a written opportunity cost finding: where the object fails, where it holds, and how badly",
+   "failure_mode": "The foreclosed alternative is hypothetical and easily inflated; an imaginary perfect alternative can veto every real one.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-teleology",
+   "name": "Teleology check (fictional finalism)",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Alfred Adler",
+    "work": "The Neurotic Character (Über den nervösen Charakter)",
+    "year": 1912,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "People are pulled by the goal they are moving toward — a largely unconscious, self-invented 'fictional final goal' — more than they are pushed by the causes they cite; judge the proposal by what it reliably achieves, not by what it says.",
+   "key_question": "Forget the stated reasons: what outcome does this behaviour or proposal consistently produce, and is that its real goal?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "any argument whose stated rationale and actual track record diverge",
+    "run the teleology check test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "Teleology can become unfalsifiable mind-reading: any outcome can be declared the 'real goal' after the fact, so the audit must predict, not just retell.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Set aside the stated reasons and ask what goal the behaviour or proposal actually moves toward.",
+    "Check the movement, not the words: what will be different, for whom, if this succeeds on its own terms?",
+    "Judge the proposal by the goal its structure serves, including the goals nobody declared."
+   ],
+   "pairs_with": [
+    "challenge.adler-private-logic",
+    "challenge.adler-safeguarding",
+    "challenge.skin-in-the-game"
+   ]
+  },
+  {
+   "slug": "challenge.adler-private-logic",
+   "name": "Private logic vs common sense",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Alfred Adler",
+    "work": "Understanding Human Nature",
+    "year": 1927,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Each person reasons from a private logic — self-consistent convictions about self, others and life ('I am…', 'others are…', 'therefore I must…') — that may contradict common sense, the shared logic by which the community actually runs.",
+   "key_question": "Which premise of this argument is private logic — true only inside the arguer's own system — and would it survive being stated plainly to the people it affects?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "arguments that are internally flawless and externally unintelligible; plans",
+    "run the private logic vs common sense test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "Majority opinion is not automatically common sense; the audit can degenerate into 'everyone disagrees with you, therefore you are wrong'.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-safeguarding",
+   "name": "Safeguarding tendencies",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Alfred Adler",
+    "work": "The Neurotic Character (Über den nervösen Charakter)",
+    "year": 1912,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "When self-esteem is threatened, people protect their inflated self-image with safeguarding manoeuvres — excuses ('yes, but…'), aggression (attacking the critic, the data or the process) and distancing (delay, vagueness, withdrawal) — rather than facing the task.",
+   "key_question": "What would this person have to admit if they dropped the excuse, the attack or the delay — and what is the manoeuvre protecting?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "decision processes that stall in a recognisable shape: chronic 'yes, but'",
+    "run the safeguarding tendencies test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "Real obstacles exist: not every 'yes, but' is a defence, and labelling a legitimate objection as safeguarding is itself a way to win an argument unfairly.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-compensation",
+   "name": "Inferiority, compensation and striving for significance",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Alfred Adler",
+    "work": "Study of Organ Inferiority and Its Psychical Compensation",
+    "year": 1907,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Feelings of inferiority are universal and fuel a striving for significance; compensation is healthy when it meets the real task and distorted when it seeks superiority over others or significance without contribution.",
+   "key_question": "What inadequacy is this plan compensating for — and does it answer the real weakness, or buy the feeling of significance instead?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "prestige projects, credential collecting, empire building, and any proposal",
+    "run the inferiority, compensation and striving for significance test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "Compensation is easy to allege and hard to disprove; used carelessly it pathologises ordinary ambition.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-social-interest",
+   "name": "Social interest test (Gemeinschaftsgefühl)",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Alfred Adler",
+    "work": "Understanding Human Nature",
+    "year": 1927,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Adler's criterion of soundness: a solution is healthy if it works on the useful side of life — solving the problem in a way that serves the community it lands in, with a felt sense of belonging and contribution.",
+   "key_question": "Does this plan succeed only by exporting its costs onto people who are not in the room — and would it still be chosen if they were?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "plans that pass every internal audit: cost-cutting that moves harm",
+    "run the social interest test test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "Can be stretched into a veto by 'the community' over any individual choice; Adler's test is contribution, not conformity, and it does not specify whose community counts.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-style-of-life",
+   "name": "Style of life and early recollections",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "analogical",
+   "origin": {
+    "author": "Alfred Adler",
+    "work": "The Science of Living",
+    "year": 1929,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "By early childhood each person settles a style of life — a consistent pattern of meeting every task the same way — and the stories they tell about their earliest memories reveal its guiding line better than their stated values do.",
+   "key_question": "What is the pattern across this person's last five decisions — and does this proposal repeat it, including the part that keeps failing?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "repeat players: founders, managers, partners whose new plan is the old plan",
+    "run the style of life and early recollections test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "Pattern-matching on a handful of anecdotes invites narrative fallacy; early recollections are projective material, not records, and must be used as hypotheses.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-life-tasks",
+   "name": "Three life tasks audit",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Alfred Adler",
+    "work": "What Life Should Mean to You",
+    "year": 1931,
+    "type": "academic"
+   },
+   "source_verified": true,
+   "summary": "Every solution is eventually tested against the three tasks no one can delegate or dodge — work (occupation), friendship (society and belonging) and love (intimacy) — and a plan that solves one by silently cannibalising another has not solved it.",
+   "key_question": "Which of the three tasks does this plan feed, and which one does it quietly tax — work, people, or love?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "life and career decisions, relocations, workload and money choices whose",
+    "run the three life tasks audit test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "The three tasks are a lens, not a budget: almost any cost can be redescribed as taxing some task, so the audit needs concrete, named costs to bite.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-courage-encouragement",
+   "name": "Courage and encouragement test",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Rudolf Dreikurs",
+    "work": "Children: The Challenge",
+    "year": 1964,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "For Dreikurs, misbehaviour and giving up are discouragement, not defect: people act as well as they feel they belong and are capable — so a workable plan must supply encouragement (building the courage to act imperfectly), not just incentives, praise or penalties.",
+   "key_question": "Does this plan assume courage it does nothing to build — and will the people executing it feel more capable, or just more watched?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "change programmes, management plans and self-improvement schemes that rely",
+    "run the courage and encouragement test test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "Encouragement can be confused with softness; it does not remove consequences, and some failures really are skill or resource gaps, not courage gaps.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-mistaken-goals",
+   "name": "Dreikurs's four mistaken goals (stakeholder audit)",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Rudolf Dreikurs & Vicki Soltz",
+    "work": "Children: The Challenge",
+    "year": 1964,
+    "type": "practitioner"
+   },
+   "source_verified": true,
+   "summary": "Behaviour that looks irrational in a group usually pursues belonging by a mistaken route: undue attention, power, revenge, or assumed inadequacy — diagnosable by your own reaction (annoyance, feeling challenged, feeling hurt, despair).",
+   "key_question": "Which mistaken goal is this stakeholder pursuing — attention, power, revenge or assumed inadequacy?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "boards, teams, families and negotiations where one party's behaviour keeps",
+    "run the dreikurs's four mistaken goals test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "Built for children and extended to adults by analogy: it reads motives off behaviour, so it generates hypotheses about stakeholders, never verdicts.",
+   "time_cost": "quick",
+   "group": "either"
+  },
+  {
+   "slug": "challenge.adler-birth-order",
+   "name": "Birth order",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "analogical",
+   "origin": {
+    "author": "Alfred Adler",
+    "work": "Understanding Human Nature",
+    "year": 1927,
+    "type": "academic"
+   },
+   "evidence_note": "Large-sample tests (Rohrer et al., PNAS 2015; Damian & Roberts 2015) find near-zero birth-order effects; hypothesis-generator only.",
+   "source_verified": true,
+   "summary": "Adler held that a child's position among siblings (eldest, middle, youngest, only) shapes its early strategy for significance; modern large-sample evidence finds essentially no personality effect, so this survives only as a prompt for questions, never as evidence.",
+   "key_question": "Is anyone in this argument treating birth order as an explanation — and if so, what actual observed behaviour is it standing in for?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "family businesses, sibling partnerships and any folk-psychological",
+    "run the birth order test"
+   ],
+   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
+   "failure_mode": "The concept itself: large samples (Rohrer et al., PNAS 2015; Damian & Roberts 2015) find no effect on personality or intellect; never evidence.",
+   "time_cost": "quick",
+   "group": "either"
   }
  ]
 }

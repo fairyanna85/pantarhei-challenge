@@ -1,6 +1,6 @@
 {
  "schema": "pantarhei-core/schema/method.schema.json",
- "count": 35,
+ "count": 59,
  "records": [
   {
    "slug": "mm.circle-of-competence",
@@ -1287,6 +1287,654 @@
    ],
    "tension_with": [],
    "status": "seed"
+  },
+  {
+   "slug": "mm.myside-bias",
+   "name": "Myside Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Keith E. Stanovich, Richard F. West & Maggie E. Toplak",
+    "work": "Myside Bias, Rational Thinking, and Intelligence (Current Directions in Psychological Science)",
+    "year": 2013,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Keith E. Stanovich, Richard F. West & Maggie E. Toplak, 2013); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "People evaluate evidence, generate arguments and test hypotheses asymmetrically in favour of their own prior position — and, uniquely among biases, intelligence does not protect against it.",
+   "key_question": "Would we find this evidence convincing if it supported the other side — and are we applying the same standard of proof to both?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "an argument, analysis or recommendation produced by someone with a known",
+    "run the myside bias test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Because it is uncorrelated with ability, smart teams dismiss the audit as applying only to other people — which is the bias operating."
+  },
+  {
+   "slug": "mm.motivated-reasoning",
+   "name": "Motivated Reasoning",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Ziva Kunda",
+    "work": "The Case for Motivated Reasoning (Psychological Bulletin)",
+    "year": 1990,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Ziva Kunda, 1990); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Reasoning is steered by the conclusion the reasoner wants to reach: congenial evidence is waved through, uncongenial evidence is cross-examined.",
+   "key_question": "What conclusion does the author of this argument need to be true — and does the rigour of their scrutiny change exactly where that need changes?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a justification, business case or defence written by the person who",
+    "run the motivated reasoning test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "The audit can itself be motivated — it is easy to diagnose motivated reasoning only in opponents, so it must be run on one's own side first."
+  },
+  {
+   "slug": "mm.identity-protective-cognition",
+   "name": "Identity-Protective Cognition",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Dan M. Kahan, Donald Braman, John Gastil, Paul Slovic & C. K. Mertz",
+    "work": "Culture and Identity-Protective Cognition: Explaining the White-Male Effect in Risk Perception (Journal of Empirical Legal Studies)",
+    "year": 2007,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Dan M. Kahan, Donald Braman, John Gastil, Paul Slovic & C. K. Mertz, 2007); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "People credit or dismiss evidence to protect their standing in a group they belong to, so on identity-loaded questions more information and more ability often deepen the split instead of closing it.",
+   "key_question": "What would it cost the person socially — with their own side — to accept this evidence, and is that cost doing the evaluating?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a claim or plan entangled with politics, culture, profession or tribe",
+    "run the identity-protective cognition test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Treating the disagreement as an information deficit and piling on more data, which gives identity more material to work against."
+  },
+  {
+   "slug": "mm.bias-blind-spot",
+   "name": "Bias Blind Spot",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Emily Pronin, Daniel Y. Lin & Lee Ross",
+    "work": "The Bias Blind Spot: Perceptions of Bias in Self Versus Others (Personality and Social Psychology Bulletin)",
+    "year": 2002,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Emily Pronin, Daniel Y. Lin & Lee Ross, 2002); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "People readily detect bias in others while rating themselves largely immune, because they check their own thinking by introspection and others' by behaviour.",
+   "key_question": "This audit found biases in everyone else's judgment — what evidence do we have that the same checks pass on ours?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "the red team itself, and any reviewer, approver or expert panel delivering",
+    "run the bias blind spot test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "It cannot be removed by awareness; naming it in the room produces agreement that it applies to the room in general and no one in particular."
+  },
+  {
+   "slug": "mm.groupthink",
+   "name": "Groupthink",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Irving L. Janis",
+    "work": "Victims of Groupthink",
+    "year": 1972,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Irving L. Janis, 1972); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "A cohesive group under a directive leader suppresses dissent, self-censors and manufactures unanimity, producing decisions no member would have defended alone.",
+   "key_question": "When did anyone in this group last disagree out loud — and what happened to them when they did?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a unanimous plan or verdict from a tight-knit team, especially under time",
+    "run the groupthink test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Unanimity is taken as evidence of correctness, when in this failure mode it is the symptom to be explained."
+  },
+  {
+   "slug": "mm.abilene-paradox",
+   "name": "Abilene Paradox",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Jerry B. Harvey",
+    "work": "The Abilene Paradox: The Management of Agreement (Organizational Dynamics)",
+    "year": 1974,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Jerry B. Harvey, 1974); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "A group collectively decides on a course of action that most or all members privately oppose, because each wrongly assumes the others support it and stays silent.",
+   "key_question": "If every person in this room voted anonymously right now, would this plan still pass?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a consensus decision that nobody seems enthusiastic about and nobody can",
+    "run the abilene paradox test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Unlike groupthink there is no pressure or illusion of invulnerability — just unspoken private disagreement — so exhortations to 'be bold' miss the mechanism entirely."
+  },
+  {
+   "slug": "mm.pluralistic-ignorance",
+   "name": "Pluralistic Ignorance",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Daniel Katz, Floyd H. Allport & Margaret B. Jenness",
+    "work": "Students' Attitudes: A Report of the Syracuse University Research Study",
+    "year": 1931,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Daniel Katz, Floyd H. Allport & Margaret B. Jenness, 1931); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Most members of a group privately reject a norm or claim but publicly conform, because each misreads everyone else's conformity as genuine agreement.",
+   "key_question": "Are we measuring what people here actually believe, or what each of them believes the rest believe?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "survey results, meeting assent, market 'consensus' or cultural claims cited",
+    "run the pluralistic ignorance test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Public signals are treated as private conviction, so the false consensus survives every poll that asks people to speak in front of each other."
+  },
+  {
+   "slug": "mm.anchoring",
+   "name": "Anchoring",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Amos Tversky & Daniel Kahneman",
+    "work": "Judgment under Uncertainty: Heuristics and Biases (Science)",
+    "year": 1974,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Amos Tversky & Daniel Kahneman, 1974); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Numerical judgments are pulled toward the first number on the table — even an arbitrary or admitted-irrelevant one — and adjust away from it insufficiently.",
+   "key_question": "Where did the first number in this discussion come from, and how far would the estimate move if it had never been said?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "any estimate, price, budget, timeline or target that was negotiated or",
+    "run the anchoring test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Expertise and warnings barely weaken it; the anchor works even when everyone in the room can name the bias."
+  },
+  {
+   "slug": "mm.attribute-substitution",
+   "name": "Attribute Substitution",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Daniel Kahneman & Shane Frederick",
+    "work": "Representativeness Revisited: Attribute Substitution in Intuitive Judgment (in Heuristics and Biases)",
+    "year": 2002,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Daniel Kahneman & Shane Frederick, 2002); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Faced with a hard target question, the mind silently answers an easier related one — liking for quality, fluency for truth, similarity for probability — and reports that answer instead.",
+   "key_question": "What question was actually asked, and what easier question did this judgment answer in its place?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a verdict on quality, risk, likelihood or value that arrived quickly and",
+    "run the attribute substitution test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "The substitution is invisible to the judge because the easy answer arrives with the confidence of the hard one."
+  },
+  {
+   "slug": "mm.wysiati",
+   "name": "WYSIATI (What You See Is All There Is)",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Daniel Kahneman",
+    "work": "Thinking, Fast and Slow",
+    "year": 2011,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Daniel Kahneman, 2011); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Judgment builds the most coherent story possible from the evidence currently visible and does not spontaneously ask what evidence is missing.",
+   "key_question": "What is not in this picture at all — which facts, if they existed, would change the story, and did anyone go looking for them?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a confident narrative, diagnosis or recommendation built from a single",
+    "run the wysiati test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Adding more of the same kind of evidence strengthens the story's coherence without strengthening its truth."
+  },
+  {
+   "slug": "mm.planning-fallacy",
+   "name": "Planning Fallacy",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Daniel Kahneman & Amos Tversky",
+    "work": "Intuitive Prediction: Biases and Corrective Procedures",
+    "year": 1979,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Daniel Kahneman & Amos Tversky, 1979); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Plans forecast the best case: timelines and budgets are built from the inside view of this project and systematically ignore how similar projects actually went.",
+   "key_question": "This schedule assumes nearly everything goes right — what did the same people's last three estimates look like against what happened?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a project plan, launch date, budget or roadmap presented as a single",
+    "run the planning fallacy test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Padding is added performatively and then negotiated away, because the base estimate was never anchored to an outcome distribution."
+  },
+  {
+   "slug": "mm.overconfidence",
+   "name": "Overconfidence",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Baruch Fischhoff, Paul Slovic & Sarah Lichtenstein",
+    "work": "Knowing with Certainty: The Appropriateness of Extreme Confidence (Journal of Experimental Psychology: Human Perception and Performance)",
+    "year": 1977,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Baruch Fischhoff, Paul Slovic & Sarah Lichtenstein, 1977); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Stated confidence systematically exceeds accuracy — events claimed to be certain fail at rates no one in the room would accept if they were stated as odds.",
+   "key_question": "If this 'certain' claim were priced as a bet, what odds would the person actually accept — and how often have their past certainties been wrong?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a claim, forecast or expert verdict delivered with high or total confidence.",
+    "run the overconfidence test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Confidence is read socially as competence, so the most overconfident voice in the room gains influence precisely where it should lose it."
+  },
+  {
+   "slug": "mm.affect-heuristic",
+   "name": "Affect Heuristic",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Melissa L. Finucane, Ali Alhakami, Paul Slovic & Stephen M. Johnson",
+    "work": "The Affect Heuristic in Judgments of Risks and Benefits (Journal of Behavioral Decision Making)",
+    "year": 2000,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Melissa L. Finucane, Ali Alhakami, Paul Slovic & Stephen M. Johnson, 2000); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Risk and benefit are read off one feeling: liked things are judged low-risk and high-benefit, disliked things the reverse, although in reality risk and benefit usually rise together.",
+   "key_question": "Are the risk and benefit estimates in this case suspiciously opposite — and would either survive being assessed by someone indifferent to the proposal?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a risk assessment or pitch where the same team scored both the dangers and",
+    "run the affect heuristic test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Information about benefit alone moves the risk judgment, so a better pitch silently rewrites the risk register."
+  },
+  {
+   "slug": "mm.scope-insensitivity",
+   "name": "Scope Insensitivity",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Daniel Kahneman & Jack L. Knetsch",
+    "work": "Valuing Public Goods: The Purchase of Moral Satisfaction (Journal of Environmental Economics and Management)",
+    "year": 1992,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Daniel Kahneman & Jack L. Knetsch, 1992); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Judgments of quantity barely respond to quantity: people offer nearly the same response for saving 2,000, 20,000 or 200,000 of something, because they are picturing a prototype, not a number.",
+   "key_question": "If this problem were ten times larger or smaller, would the proposed response change at all — and if not, what is it responding to?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a valuation, impact claim, market sizing or harm estimate driven by a vivid",
+    "run the scope insensitivity test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "The prototype image does the work, so multiplying the real scope multiplies nothing in the judgment."
+  },
+  {
+   "slug": "mm.focusing-illusion",
+   "name": "Focusing Illusion",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Daniel Kahneman, Alan B. Krueger, David Schkade, Norbert Schwarz & Arthur A. Stone",
+    "work": "Would You Be Happier If You Were Richer? A Focusing Illusion (Science)",
+    "year": 2006,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Daniel Kahneman, Alan B. Krueger, David Schkade, Norbert Schwarz & Arthur A. Stone, 2006); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Nothing in life is as important as you think it is when you are thinking about it: whatever the judgment focuses on gets its weight inflated.",
+   "key_question": "This factor dominates the analysis because it is the topic — how much of the outcome does it actually explain across a whole day, year or budget?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a decision hinging on one salient attribute — salary, one feature, one",
+    "run the focusing illusion test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "The audit itself focuses attention, so the check must compare against the full set of factors, not just argue the salient one down."
+  },
+  {
+   "slug": "mm.sunk-cost",
+   "name": "Sunk Cost",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Hal R. Arkes & Catherine Blumer",
+    "work": "The Psychology of Sunk Cost (Organizational Behavior and Human Decision Processes)",
+    "year": 1985,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Hal R. Arkes & Catherine Blumer, 1985); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Money, time and effort already spent — which no decision can recover — keep pulling investment into failing courses of action to avoid admitting the loss.",
+   "key_question": "If we arrived today with nothing spent, would we fund this at its remaining cost for its remaining expected value?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a continuation, renewal or 'one more push' decision on a project with a",
+    "run the sunk cost test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Each new tranche is justified by the last, so the total committed grows past any point at which a fresh decision-maker would have entered."
+  },
+  {
+   "slug": "mm.status-quo-bias",
+   "name": "Status Quo Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "William Samuelson & Richard Zeckhauser",
+    "work": "Status Quo Bias in Decision Making (Journal of Risk and Uncertainty)",
+    "year": 1988,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (William Samuelson & Richard Zeckhauser, 1988); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Options are preferred because they are the current arrangement, beyond what their merits justify — the default wins by being the default.",
+   "key_question": "If the alternative were the status quo and our current arrangement were the proposal, would we vote to switch to it?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a renewal, an incumbent vendor, an existing policy or any 'why change?'",
+    "run the status quo bias test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "It compounds with sunk cost and omission bias until the burden of proof on change becomes impossible to meet."
+  },
+  {
+   "slug": "mm.authority-bias",
+   "name": "Authority Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Stanley Milgram",
+    "work": "Behavioral Study of Obedience (Journal of Abnormal and Social Psychology)",
+    "year": 1963,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Stanley Milgram, 1963); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Claims gain credence from the rank, title or confidence of the person stating them, independently of the evidence offered.",
+   "key_question": "Would this claim survive if it were read aloud unattributed — and has anyone checked the evidence rather than the CV?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "an expert endorsement, a senior sponsor's assertion, or a famous name used",
+    "run the authority bias test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "Deference is socially rewarded and dissent is costly, so the audit has to be procedural (blind the source) rather than exhortatory."
+  },
+  {
+   "slug": "mm.halo-effect",
+   "name": "Halo Effect",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Edward L. Thorndike",
+    "work": "A Constant Error in Psychological Ratings (Journal of Applied Psychology)",
+    "year": 1920,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Edward L. Thorndike, 1920); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "One salient trait — success, attractiveness, a famous employer — bleeds into ratings of every other trait, so independent qualities are scored as if they were one.",
+   "key_question": "Are these separate scores actually separate evidence, or one strong impression wearing several hats?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a judgment about a person, company or product where one standout feature is",
+    "run the halo effect test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "It survives explicit instruction to rate independently; only genuinely separate evidence per dimension breaks it (see MAP)."
+  },
+  {
+   "slug": "mm.fundamental-attribution-error",
+   "name": "Fundamental Attribution Error",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Lee Ross",
+    "work": "The Intuitive Psychologist and His Shortcomings (Advances in Experimental Social Psychology)",
+    "year": 1977,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Lee Ross, 1977); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Others' behaviour is explained by their character while the pressures of their situation are discounted — so failures get blamed on people that a different person in the same seat would also have produced.",
+   "key_question": "What would have to be true about the situation for a competent, well-intentioned person to have done exactly this?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a judgment about a person — a failure review, a negotiation read, a",
+    "run the fundamental attribution error test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "It is the default setting of post-mortems, so situational causes are only found when the audit forces them to be listed first."
+  },
+  {
+   "slug": "mm.self-serving-bias",
+   "name": "Self-Serving Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Dale T. Miller & Michael Ross",
+    "work": "Self-Serving Biases in the Attribution of Causality: Fact or Fiction? (Psychological Bulletin)",
+    "year": 1975,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Dale T. Miller & Michael Ross, 1975); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Success is attributed to one's own skill and failure to circumstances — in oneself and one's team — corrupting every lessons-learned exercise built on self-report.",
+   "key_question": "In this account, who gets credit for the wins and what gets blamed for the losses — and would the pattern reverse if the outcomes did?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a self-assessment, post-mortem, case study or track record presented by its",
+    "run the self-serving bias test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "The account is usually sincere, which makes it persuasive; only contemporaneous records (decision journals) can correct it."
+  },
+  {
+   "slug": "mm.negativity-bias",
+   "name": "Negativity Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Roy F. Baumeister, Ellen Bratslavsky, Catrin Finkenauer & Kathleen D. Vohs",
+    "work": "Bad Is Stronger Than Good (Review of General Psychology)",
+    "year": 2001,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Roy F. Baumeister, Ellen Bratslavsky, Catrin Finkenauer & Kathleen D. Vohs, 2001); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "Bad events, bad feedback and bad possibilities weigh more than equivalent good ones, so a single vivid downside can veto a favourable balance of evidence.",
+   "key_question": "Is the negative case weighted because it is more probable, or because it is more negative — and what does the symmetric upside look like?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a risk review, rejection or go/no-go where one bad scenario dominates a",
+    "run the negativity bias test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "It masquerades as prudence, so challenging it reads as recklessness unless the audit compares like with like numerically."
+  },
+  {
+   "slug": "mm.optimism-bias",
+   "name": "Optimism Bias",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Tali Sharot",
+    "work": "The Optimism Bias",
+    "year": 2011,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Tali Sharot, 2011); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "People systematically overestimate the likelihood of good outcomes for themselves specifically — their project, their health, their venture — while rating others' chances more soberly.",
+   "key_question": "Are these odds the ones the person would assign to a stranger attempting the identical thing?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a founder's, patient's or sponsor's estimate of their own prospects.",
+    "run the optimism bias test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "It is selective — the same person can be pessimistic about the world and optimistic about themselves — so generic risk warnings slide off."
+  },
+  {
+   "slug": "mm.dunning-kruger",
+   "name": "Dunning–Kruger Effect",
+   "kind": "model",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Justin Kruger & David Dunning",
+    "work": "Unskilled and Unaware of It (Journal of Personality and Social Psychology)",
+    "year": 1999,
+    "type": "academic"
+   },
+   "evidence_note": "Documented in the research literature (Justin Kruger & David Dunning, 1999); apply as a discount on judgment, not as proof in a single case.",
+   "source_verified": true,
+   "summary": "The skills needed to produce a correct answer are the same skills needed to recognise one, so the least competent judges are the most confident that they are competent.",
+   "key_question": "What test, independent of the person's own assessment, establishes that this judge can actually tell good work from bad in this domain?",
+   "status": "seed",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "a confident verdict from someone whose expertise in the specific domain is",
+    "run the dunning–kruger effect test"
+   ],
+   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
+   "failure_mode": "It cannot be self-diagnosed — asking the person to reflect harder uses the very capacity that is missing — so the audit must be an external performance check."
   }
  ]
 }
