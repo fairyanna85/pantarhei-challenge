@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="809" height="262" viewBox="0 0 809 262">
+<rect width="809" height="262" rx="8" fill="#14161A"/>
+<g font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#F6F4EF">
+<text x="18" y="27" xml:space="preserve">RED TEAM · &quot;Move the team to a four-day week to fix burnout&quot;</text>
+<text x="18" y="45" xml:space="preserve">──────────────────────────────────────────────────────────────</text>
+<text x="18" y="63" xml:space="preserve">STEELMAN  Burnout is driven by sustained load without recovery; a structural day off…</text>
+<text x="18" y="81" xml:space="preserve"></text>
+<text x="18" y="99" xml:space="preserve">#  ATTACK                                        AUDIT                    SEVERITY</text>
+<text x="18" y="117" xml:space="preserve">1  Pilots that report success self-select keen teams   Survivorship bias   serious</text>
+<text x="18" y="135" xml:space="preserve">2  Same deadlines in 4 days raises daily load         Second-order         FATAL unless scope drops</text>
+<text x="18" y="153" xml:space="preserve">3  Partner SLAs assume 5-day coverage                  Key assumptions      serious</text>
+<text x="18" y="171" xml:space="preserve">4  &quot;Everyone loves it&quot; is the first-month effect       Regression to mean   cosmetic</text>
+<text x="18" y="189" xml:space="preserve"></text>
+<text x="18" y="207" xml:space="preserve">SURVIVAL   3/10  (one fatal flaw caps at 3)</text>
+<text x="18" y="225" xml:space="preserve">WEAKEST LINK  #2: the plan holds only if scope falls with the hours.</text>
+<text x="18" y="243" xml:space="preserve">STRONGER VERSION  Four-day week paired with a 20% scope cut and a rotating Friday on-call.</text>
+</g>
+</svg>
