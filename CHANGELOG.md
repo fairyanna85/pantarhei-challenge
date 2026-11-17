@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.0
+
+- Pareto pass on the v2 additions: 18 records cut (duplicates of stronger neighbours, team/war-room formats, and the weakest-evidence Adlerian items including birth order). Catalog 109 -> 94 records (89 own methods); bias library 59 -> 56.
+- The surviving core: argument anatomy, tradecraft evidence checks, reference-class forecasting, calibration, noise and metric-corruption audits, ergodicity and reversibility, Adlerian teleology and private logic, misperception audit, and the five highest-yield bias models (myside bias, motivated reasoning, groupthink, planning fallacy, bias blind spot).
+
 ## 2.0.0
 
 - Strengthened the Red Team: 91 new audits in the catalog (104 own methods) and 24 new bias models (59 in the vendored library).

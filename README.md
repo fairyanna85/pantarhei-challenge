@@ -6,7 +6,7 @@ A red-team and critical-thinking skill for Claude, Claude Code and Hermes: steel
 
 <p align="center">
   <a href="#install"><img alt="Install" src="https://img.shields.io/badge/install-1%20command-C0391F"></a>
-  <img alt="Methods" src="https://img.shields.io/badge/methods-104-14161A">
+  <img alt="Methods" src="https://img.shields.io/badge/methods-89-14161A">
   <img alt="Works with" src="https://img.shields.io/badge/works%20with-Claude%20·%20Claude%20Code%20·%20Hermes-5B6270">
   <img alt="License" src="https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-5B6270">
 </p>

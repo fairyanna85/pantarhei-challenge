@@ -11,7 +11,7 @@ objections; it is a verdict on what survives and the stronger version that remai
 
 Load before starting:
 - `references/catalog.json`: red-team methods.
-- `references/models.json`: all 59 audit models from the shared library, plus inversion,
+- `references/models.json`: all 56 audit models from the shared library, plus inversion,
   second-order thinking and falsification.
 - `references/shared-rules.md`.
 

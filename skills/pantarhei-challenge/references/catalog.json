@@ -1,7 +1,7 @@
 {
  "skill": "pantarhei-challenge",
  "schema": "core/schema/method.schema.json",
- "count": 109,
+ "count": 94,
  "records": [
   {
    "slug": "challenge.steelman",
@@ -899,74 +899,6 @@
    ]
   },
   {
-   "slug": "challenge.stasis-check",
-   "name": "Stasis check",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Hermagoras of Temnos (transmitted by Cicero and Quintilian)",
-    "work": "Stasis doctrine, in Cicero's De Inventione and Quintilian's Institutio Oratoria",
-    "year": -87,
-    "type": "tradition"
-   },
-   "source_verified": true,
-   "summary": "Locates the actual point of dispute among four stases — fact (did it happen?), definition (what is it?), quality (how good or serious is it?) and procedure (is this the right forum or process?) — and flags parties arguing at different stases past each other.",
-   "key_question": "Which question are we actually disputing — fact, definition, quality or procedure — and is the other side answering a different one?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "is this claim credible",
-    "someone is asserting this as established fact",
-    "run the stasis check test"
-   ],
-   "produces": "a written stasis check finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Taxonomy for its own sake: real disputes often sit at several stases at once, and naming the stasis does not settle it.",
-   "time_cost": "quick",
-   "group": "either",
-   "steps": [
-    "Ask which of the four stases the dispute is really at: fact, definition, quality, or procedure/jurisdiction.",
-    "Check whether the two sides are arguing at different stases and talking past each other.",
-    "Restart the argument at the lowest unsettled stasis; everything above it is premature."
-   ]
-  },
-  {
-   "slug": "challenge.scholastic-disputation",
-   "name": "Scholastic disputation",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Medieval universities; Thomas Aquinas (exemplar)",
-    "work": "The quaestio format of the Summa Theologiae",
-    "year": 1274,
-    "type": "tradition"
-   },
-   "source_verified": true,
-   "summary": "Structures an attack as objections stated in their strongest form, in order, followed by the reply, followed by a point-by-point answer to each objection — nothing objected is left unanswered and nothing answered was not first stated fairly.",
-   "key_question": "What are the strongest objections to this position, stated as their holders would state them — and does the position answer every one?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "is this claim credible",
-    "someone is asserting this as established fact",
-    "run the scholastic disputation test"
-   ],
-   "produces": "a written scholastic disputation finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Ritual completeness: weak objections are padded in to be knocked down, and the form can simulate thoroughness while the one fatal objection is quietly omitted.",
-   "time_cost": "medium",
-   "group": "either",
-   "steps": [
-    "State the question and the strongest objections to your own position, in the opponents' best form.",
-    "Give the contrary authority or principle (sed contra) in one line.",
-    "Answer the question, then reply to each objection in turn, conceding what must be conceded."
-   ]
-  },
-  {
    "slug": "challenge.principle-of-charity",
    "name": "Principle of charity",
    "kind": "principle",
@@ -1305,40 +1237,6 @@
    ]
   },
   {
-   "slug": "challenge.cartesian-rules",
-   "name": "Cartesian rules audit",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Rene Descartes",
-    "work": "Discourse on the Method; Rules for the Direction of the Mind",
-    "year": 1637,
-    "type": "academic"
-   },
-   "source_verified": true,
-   "summary": "Applies Descartes' four precepts as an audit: accept nothing not clearly known, divide each difficulty into parts, proceed from the simplest to the most complex, and make enumerations so complete that nothing is omitted.",
-   "key_question": "Which parts of this case were accepted without clear evidence, never divided into parts, or left out of the enumeration altogether?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "attack this plan before reality does",
-    "a plan that has never been challenged",
-    "run the cartesian rules audit test"
-   ],
-   "produces": "a written cartesian rules audit finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Demands a certainty most real decisions cannot reach; applied rigidly it produces paralysis and false confidence in whatever survived introspection.",
-   "time_cost": "medium",
-   "group": "either",
-   "steps": [
-    "Check the four rules in order: was anything accepted without clear evidence?",
-    "Was the problem divided into parts small enough to judge?",
-    "Was the reasoning ordered from simple to complex, and was the enumeration complete enough to catch omissions?"
-   ]
-  },
-  {
    "slug": "challenge.baloney-detection-kit",
    "name": "Baloney detection kit (full)",
    "kind": "method",
@@ -1499,40 +1397,6 @@
    ],
    "pairs_with": [
     "challenge.lateral-reading"
-   ]
-  },
-  {
-   "slug": "challenge.propaganda-devices",
-   "name": "Propaganda device sweep",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Institute for Propaganda Analysis (Clyde R. Miller et al.)",
-    "work": "How to Detect Propaganda (Propaganda Analysis, vol. 1 no. 2)",
-    "year": 1937,
-    "type": "industry"
-   },
-   "source_verified": true,
-   "summary": "Sweeps a pitch or campaign for the seven devices: name-calling, glittering generalities, transfer, testimonial, plain folks, card stacking and bandwagon — persuasion carried by labels, virtue words and stacked selection instead of evidence.",
-   "key_question": "Strip the labels, virtue words, endorsements and selected facts: what evidence remains once the seven devices are removed?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "is this claim credible",
-    "someone is asserting this as established fact",
-    "run the propaganda device sweep test"
-   ],
-   "produces": "a written propaganda device sweep finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Device-spotting becomes the conclusion: a message can use testimonials and virtue words and still be right, and the sweep detects technique, not falsehood.",
-   "time_cost": "quick",
-   "group": "either",
-   "steps": [
-    "Sweep the text for the seven devices: name-calling, glittering generalities, transfer, testimonial, plain folks, card stacking, bandwagon.",
-    "For each hit, rewrite the sentence with the device removed and see what evidence remains.",
-    "Judge the claim on the residue, not on the framing."
    ]
   },
   {
@@ -1804,74 +1668,6 @@
    ]
   },
   {
-   "slug": "challenge.red-cell",
-   "name": "Red Cell analysis",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Central Intelligence Agency (Red Cell unit); Richards J. Heuer Jr. & Randolph H. Pherson",
-    "work": "Structured Analytic Techniques for Intelligence Analysis",
-    "year": 2010,
-    "type": "industry"
-   },
-   "source_verified": true,
-   "summary": "A small cell adopts the adversary's identity outright and plans as them — not attacking our plan from outside, but generating the move the adversary would actually make against it.",
-   "key_question": "If you were them, tasked with defeating this plan, what exactly would you do first?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "attack this plan before reality does",
-    "a plan that has never been challenged",
-    "run the red cell analysis test"
-   ],
-   "produces": "a written red cell analysis finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Threat inflation: an imaginative cell invents a cleverer, more malign adversary than the evidence supports — the Team B failure in miniature.",
-   "time_cost": "medium",
-   "group": "group",
-   "steps": [
-    "Form the cell: a small group briefed only with what the adversary could plausibly know and do.",
-    "Have the cell plan against our proposal under the adversary's real constraints and permissions.",
-    "Take back the cell's most damaging feasible move and test the plan against it."
-   ]
-  },
-  {
-   "slug": "challenge.team-a-team-b",
-   "name": "Team A / Team B competitive analysis",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Central Intelligence Agency (Team B chaired by Richard Pipes)",
-    "work": "Team B competitive analysis exercise on Soviet strategic objectives",
-    "year": 1976,
-    "type": "industry"
-   },
-   "source_verified": true,
-   "summary": "Two independent teams work the same evidence to rival conclusions and defend them against each other, so the disagreement itself — not one team's blind spots — becomes the product.",
-   "key_question": "Given exactly this evidence, what is the strongest opposite conclusion a competent team could reach and defend?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "attacking a consensus / claim",
-    "check this consensus / claim before relying on it",
-    "run the team a / team b competitive analysis test"
-   ],
-   "produces": "a written team a / team b competitive analysis finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "A stacked Team B: if the rival team is chosen for its conclusions, competitive analysis becomes theatre that manufactures the answer it was convened to find.",
-   "time_cost": "deep",
-   "group": "group",
-   "steps": [
-    "Brief two teams on the same evidence with opposite mandated conclusions.",
-    "Have each build its strongest case and then attack the other's reading of the shared evidence.",
-    "Judge which case survives contact with the other, and what evidence would settle it."
-   ]
-  },
-  {
    "slug": "challenge.indicators-validator",
    "name": "Indicators and signposts (Indicators Validator)",
    "kind": "method",
@@ -2008,108 +1804,6 @@
    ]
   },
   {
-   "slug": "challenge.multiple-scenarios",
-   "name": "Multiple Scenario Generation",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
-    "work": "Structured Analytic Techniques for Intelligence Analysis",
-    "year": 2010,
-    "type": "practitioner"
-   },
-   "source_verified": true,
-   "summary": "Builds several internally consistent futures from the key drivers and their uncertainties, then tests the claim or plan against all of them instead of the single expected future.",
-   "key_question": "In which of these futures does your argument stop working — and did you quietly plan for only one of them?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "attacking a plan / decision",
-    "check this plan / decision before relying on it",
-    "run the multiple scenario generation test"
-   ],
-   "produces": "a written multiple scenario generation finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "The scenario set is reverse-engineered around the preferred future: one 'expected' scenario gets the detail, the rest get the labels.",
-   "time_cost": "deep",
-   "group": "either",
-   "steps": [
-    "Fix the focal question and the two uncertainties that matter most and are least predictable.",
-    "Build a small set of distinct scenarios from their combinations; give each a name and a logic.",
-    "Test the plan in every scenario; keep only what survives all of them or fails knowingly in one."
-   ]
-  },
-  {
-   "slug": "challenge.cross-impact-matrix",
-   "name": "Cross-Impact Matrix",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Theodore J. Gordon & Olaf Helmer",
-    "work": "Cross-impact analysis, RAND Corporation (codified in Heuer & Pherson, 2010)",
-    "year": 1966,
-    "type": "industry"
-   },
-   "source_verified": true,
-   "summary": "Maps how the occurrence of each key event or trend raises or lowers the probability of every other, exposing combinations whose joint effect the argument never considered.",
-   "key_question": "Which two things in your argument are you treating as independent that would actually trigger — or cancel — each other?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "attacking a plan / explanation",
-    "check this plan / explanation before relying on it",
-    "run the cross-impact matrix test"
-   ],
-   "produces": "a written cross-impact matrix finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "False precision and combinatorial sprawl: dozens of gut-feel conditional probabilities produce an output that looks computed and is not.",
-   "time_cost": "deep",
-   "group": "either",
-   "steps": [
-    "List the key events or trends bearing on the plan down one axis and across the other.",
-    "For each pair, judge how the first changes the second's likelihood or force.",
-    "Find the high-impact nodes: the few events whose movement moves everything else."
-   ]
-  },
-  {
-   "slug": "challenge.hypothesis-generation",
-   "name": "Hypothesis generation (Multiple Hypotheses Generator)",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
-    "work": "Structured Analytic Techniques for Intelligence Analysis",
-    "year": 2010,
-    "type": "practitioner"
-   },
-   "source_verified": true,
-   "summary": "Forces the full set of rival explanations to be generated and written down before any testing begins, attacking Heuer's satisficing failure: seizing the first plausible story and only ever checking it.",
-   "key_question": "How many genuinely different explanations did you write down before you started deciding which one is right?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "which explanation actually fits",
-    "several stories could explain this",
-    "run the hypothesis generation test"
-   ],
-   "produces": "a written hypothesis generation (multiple hypotheses generator) finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Padding: the list is filled out with straw rivals no one believes, so the favoured hypothesis 'wins' a rigged competition.",
-   "time_cost": "medium",
-   "group": "either",
-   "steps": [
-    "Before weighing evidence, generate the full set of plausible hypotheses, including the unwelcome ones.",
-    "Include at least one hypothesis in which we are being deceived, mistaken or played.",
-    "Only then move to weighing; a hypothesis never generated can never win."
-   ]
-  },
-  {
    "slug": "challenge.diagnostic-reasoning",
    "name": "Diagnostic reasoning (diagnosticity check)",
    "kind": "method",
@@ -2178,74 +1872,6 @@
     "Ask who gains if we believe this, and what it would cost them to fake the evidence we have.",
     "Look for the classic tells: evidence that is too complete, too convenient, or volunteered too early.",
     "Seek one channel the suspected deceiver does not control, and check the story there."
-   ]
-  },
-  {
-   "slug": "challenge.chronologies-timelines",
-   "name": "Chronologies and Timelines",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
-    "work": "Structured Analytic Techniques for Intelligence Analysis",
-    "year": 2010,
-    "type": "practitioner"
-   },
-   "source_verified": true,
-   "summary": "Lays every dated event in the story on one timeline to attack the narrative's hidden errors: reversed sequence, impossible timing, missing intervals, and causes that postdate their effects.",
-   "key_question": "Put every event on one timeline — does the cause still come before the effect, and what falls in the gaps?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "which explanation actually fits",
-    "several stories could explain this",
-    "run the chronologies and timelines test"
-   ],
-   "produces": "a written chronologies and timelines finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Sequence is mistaken for causation: a clean timeline makes post hoc reasoning feel proven rather than merely possible.",
-   "time_cost": "medium",
-   "group": "either",
-   "steps": [
-    "Lay the known events on one dated line, with sources for each date.",
-    "Look for gaps, impossible sequences and events that only make sense in a different order.",
-    "Rebuild the causal story so it fits the timeline, not the other way round."
-   ]
-  },
-  {
-   "slug": "challenge.structured-analogies",
-   "name": "Structured Analogies",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Richards J. Heuer Jr. & Randolph H. Pherson",
-    "work": "Structured Analytic Techniques for Intelligence Analysis",
-    "year": 2010,
-    "type": "practitioner"
-   },
-   "source_verified": true,
-   "summary": "Takes the historical analogy an argument leans on ('this is Munich, 1938') and scores it dimension by dimension — similarities, differences, and whether the differences are the load-bearing ones.",
-   "key_question": "Your analogy matches on the surface — where does it differ, and is the difference exactly the part your conclusion depends on?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "attacking a explanation / claim",
-    "check this explanation / claim before relying on it",
-    "run the structured analogies test"
-   ],
-   "produces": "a written structured analogies finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Analogy shopping continues one level down: dimensions are chosen and weighted so the favoured comparison survives its own audit.",
-   "time_cost": "medium",
-   "group": "either",
-   "steps": [
-    "State the present case and the historical analogy being claimed for it, side by side.",
-    "List the likenesses, then the differences, then what is simply unknown about both cases.",
-    "Judge the analogy by its differences: if they touch the mechanism that produced the old outcome, the analogy fails."
    ]
   },
   {
@@ -2864,39 +2490,6 @@
    ]
   },
   {
-   "slug": "challenge.maximin-worst-case",
-   "name": "Maximin (Wald criterion)",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "formal",
-   "origin": {
-    "author": "Abraham Wald",
-    "work": "Statistical Decision Functions",
-    "year": 1950,
-    "type": "academic"
-   },
-   "source_verified": true,
-   "summary": "Ignore probabilities entirely and choose the option whose worst possible outcome is least bad — the guaranteed-outcome principle.",
-   "key_question": "What is the worst outcome this option can produce, and can we actually survive it?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "survival-critical choices where a single bad outcome ends the game and",
-    "run the maximin test"
-   ],
-   "produces": "a written maximin (wald criterion) finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Paralysing pessimism: it ignores how unlikely the worst case is and how much upside is surrendered to avoid it.",
-   "time_cost": "medium",
-   "group": "either",
-   "steps": [
-    "For each option, identify its worst plausible outcome, honestly stated.",
-    "Compare options by those worst cases, not by their expected or hoped cases.",
-    "If the leading option's worst case is ruinous and another's is merely bad, the ranking flips."
-   ]
-  },
-  {
    "slug": "challenge.reversibility-check",
    "name": "Reversibility and regret minimisation",
    "kind": "method",
@@ -2993,39 +2586,6 @@
     "Draw the tree: options, chance branches, outcomes, each with a probability and a value.",
     "Multiply through and compare expected values; check which single probability the ranking hangs on.",
     "If that probability is a guess wearing a suit, say so and re-run with its honest range."
-   ]
-  },
-  {
-   "slug": "challenge.bayesian-decision",
-   "name": "Bayesian decision theory",
-   "kind": "method",
-   "mode": "audit",
-   "evidence_class": "formal",
-   "origin": {
-    "author": "Leonard J. Savage",
-    "work": "The Foundations of Statistics",
-    "year": 1954,
-    "type": "academic"
-   },
-   "source_verified": true,
-   "summary": "State a prior, update it by the likelihood of the evidence under each hypothesis, and choose the act with the highest expected utility under the posterior — making the prior itself an auditable object.",
-   "key_question": "What was your prior before this evidence arrived, and how much should this evidence actually move it?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "arguments where one striking study, anecdote or data point is doing the",
-    "run the bayesian decision theory test"
-   ],
-   "produces": "a written bayesian decision theory finding: where the object fails, where it holds, and how badly",
-   "failure_mode": "Priors can be laundered — chosen after the fact to reach the wanted posterior — and precise updating on garbage likelihoods is still garbage.",
-   "time_cost": "medium",
-   "group": "either",
-   "steps": [
-    "Combine the updated probabilities with the payoffs of being wrong each way.",
-    "Choose the act with the best expected outcome under the updated beliefs, not the most likely story.",
-    "Name the evidence that would flip the chosen act, and what it would cost to wait for it."
    ]
   },
   {
@@ -3601,34 +3161,6 @@
    "group": "either"
   },
   {
-   "slug": "challenge.adler-life-tasks",
-   "name": "Three life tasks audit",
-   "kind": "principle",
-   "mode": "audit",
-   "evidence_class": "heuristic",
-   "origin": {
-    "author": "Alfred Adler",
-    "work": "What Life Should Mean to You",
-    "year": 1931,
-    "type": "academic"
-   },
-   "source_verified": true,
-   "summary": "Every solution is eventually tested against the three tasks no one can delegate or dodge — work (occupation), friendship (society and belonging) and love (intimacy) — and a plan that solves one by silently cannibalising another has not solved it.",
-   "key_question": "Which of the three tasks does this plan feed, and which one does it quietly tax — work, people, or love?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "life and career decisions, relocations, workload and money choices whose",
-    "run the three life tasks audit test"
-   ],
-   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
-   "failure_mode": "The three tasks are a lens, not a budget: almost any cost can be redescribed as taxing some task, so the audit needs concrete, named costs to bite.",
-   "time_cost": "quick",
-   "group": "either"
-  },
-  {
    "slug": "challenge.adler-courage-encouragement",
    "name": "Courage and encouragement test",
    "kind": "principle",
@@ -3681,35 +3213,6 @@
    ],
    "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
    "failure_mode": "Built for children and extended to adults by analogy: it reads motives off behaviour, so it generates hypotheses about stakeholders, never verdicts.",
-   "time_cost": "quick",
-   "group": "either"
-  },
-  {
-   "slug": "challenge.adler-birth-order",
-   "name": "Birth order",
-   "kind": "model",
-   "mode": "audit",
-   "evidence_class": "analogical",
-   "origin": {
-    "author": "Alfred Adler",
-    "work": "Understanding Human Nature",
-    "year": 1927,
-    "type": "academic"
-   },
-   "evidence_note": "Large-sample tests (Rohrer et al., PNAS 2015; Damian & Roberts 2015) find near-zero birth-order effects; hypothesis-generator only.",
-   "source_verified": true,
-   "summary": "Adler held that a child's position among siblings (eldest, middle, youngest, only) shapes its early strategy for significance; modern large-sample evidence finds essentially no personality effect, so this survives only as a prompt for questions, never as evidence.",
-   "key_question": "Is anyone in this argument treating birth order as an explanation — and if so, what actual observed behaviour is it standing in for?",
-   "status": "complete",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "family businesses, sibling partnerships and any folk-psychological",
-    "run the birth order test"
-   ],
-   "produces": "a motive read: the goal the behaviour actually serves, stated as a hypothesis to test",
-   "failure_mode": "The concept itself: large samples (Rohrer et al., PNAS 2015; Damian & Roberts 2015) find no effect on personality or intellect; never evidence.",
    "time_cost": "quick",
    "group": "either"
   }

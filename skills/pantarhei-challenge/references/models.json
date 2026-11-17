@@ -1,6 +1,6 @@
 {
  "schema": "pantarhei-core/schema/method.schema.json",
- "count": 59,
+ "count": 56,
  "records": [
   {
    "slug": "mm.circle-of-competence",
@@ -1505,33 +1505,6 @@
    "failure_mode": "Expertise and warnings barely weaken it; the anchor works even when everyone in the room can name the bias."
   },
   {
-   "slug": "mm.attribute-substitution",
-   "name": "Attribute Substitution",
-   "kind": "model",
-   "mode": "audit",
-   "evidence_class": "empirical",
-   "origin": {
-    "author": "Daniel Kahneman & Shane Frederick",
-    "work": "Representativeness Revisited: Attribute Substitution in Intuitive Judgment (in Heuristics and Biases)",
-    "year": 2002,
-    "type": "academic"
-   },
-   "evidence_note": "Documented in the research literature (Daniel Kahneman & Shane Frederick, 2002); apply as a discount on judgment, not as proof in a single case.",
-   "source_verified": true,
-   "summary": "Faced with a hard target question, the mind silently answers an easier related one — liking for quality, fluency for truth, similarity for probability — and reports that answer instead.",
-   "key_question": "What question was actually asked, and what easier question did this judgment answer in its place?",
-   "status": "seed",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "a verdict on quality, risk, likelihood or value that arrived quickly and",
-    "run the attribute substitution test"
-   ],
-   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
-   "failure_mode": "The substitution is invisible to the judge because the easy answer arrives with the confidence of the hard one."
-  },
-  {
    "slug": "mm.wysiati",
    "name": "WYSIATI (What You See Is All There Is)",
    "kind": "model",
@@ -1638,60 +1611,6 @@
    ],
    "produces": "a named discount: the direction of the distortion and the adjustment it demands",
    "failure_mode": "Information about benefit alone moves the risk judgment, so a better pitch silently rewrites the risk register."
-  },
-  {
-   "slug": "mm.scope-insensitivity",
-   "name": "Scope Insensitivity",
-   "kind": "model",
-   "mode": "audit",
-   "evidence_class": "empirical",
-   "origin": {
-    "author": "Daniel Kahneman & Jack L. Knetsch",
-    "work": "Valuing Public Goods: The Purchase of Moral Satisfaction (Journal of Environmental Economics and Management)",
-    "year": 1992,
-    "type": "academic"
-   },
-   "evidence_note": "Documented in the research literature (Daniel Kahneman & Jack L. Knetsch, 1992); apply as a discount on judgment, not as proof in a single case.",
-   "source_verified": true,
-   "summary": "Judgments of quantity barely respond to quantity: people offer nearly the same response for saving 2,000, 20,000 or 200,000 of something, because they are picturing a prototype, not a number.",
-   "key_question": "If this problem were ten times larger or smaller, would the proposed response change at all — and if not, what is it responding to?",
-   "status": "seed",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "a valuation, impact claim, market sizing or harm estimate driven by a vivid",
-    "run the scope insensitivity test"
-   ],
-   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
-   "failure_mode": "The prototype image does the work, so multiplying the real scope multiplies nothing in the judgment."
-  },
-  {
-   "slug": "mm.focusing-illusion",
-   "name": "Focusing Illusion",
-   "kind": "model",
-   "mode": "audit",
-   "evidence_class": "empirical",
-   "origin": {
-    "author": "Daniel Kahneman, Alan B. Krueger, David Schkade, Norbert Schwarz & Arthur A. Stone",
-    "work": "Would You Be Happier If You Were Richer? A Focusing Illusion (Science)",
-    "year": 2006,
-    "type": "academic"
-   },
-   "evidence_note": "Documented in the research literature (Daniel Kahneman, Alan B. Krueger, David Schkade, Norbert Schwarz & Arthur A. Stone, 2006); apply as a discount on judgment, not as proof in a single case.",
-   "source_verified": true,
-   "summary": "Nothing in life is as important as you think it is when you are thinking about it: whatever the judgment focuses on gets its weight inflated.",
-   "key_question": "This factor dominates the analysis because it is the topic — how much of the outcome does it actually explain across a whole day, year or budget?",
-   "status": "seed",
-   "stages": [
-    "stress_test"
-   ],
-   "use_when": [
-    "a decision hinging on one salient attribute — salary, one feature, one",
-    "run the focusing illusion test"
-   ],
-   "produces": "a named discount: the direction of the distortion and the adjustment it demands",
-   "failure_mode": "The audit itself focuses attention, so the check must compare against the full set of factors, not just argue the salient one down."
   },
   {
    "slug": "mm.sunk-cost",
